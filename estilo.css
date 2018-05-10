@@ -1,0 +1,20 @@
+/* link não visitados  */
+#footer a:link {
+   color: black;
+}
+
+/* link visitados */
+#footer a:visited {
+   color: black;
+}
+
+/* mouse no link */
+#footer ul li a:hover {
+   color: gray;
+    text-decoration: none;
+}
+
+/* link selecionados */
+#footer a:active {
+   color: black;
+}
