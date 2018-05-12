@@ -21,7 +21,7 @@
 
 
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg  navbar-dark bg-black fixed-top">
 
         <div class="container">
 
@@ -36,16 +36,16 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home
+                        <a class="nav-link" href="home.html" style="text-align: center;">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projetos.html">Projetos</a>
+                        <a class="nav-link" href="projetos.html" style="text-align: center;">Projetos</a>
                     </li>
 
-                    <li class="nav-item dropdown" style="border: solid; border-radius: 20px; border-color: white;">
-                        <a class="nav-link" target="_blank" href="http://www.camonecofashion.wordpress.com">Camon</a>
+                    <li class="nav-item dropdown">
+                        <a id="btncanav"  class="nav-link text-light" target="_blank" href="http://www.camonecofashion.wordpress.com">Camon</a>
                     </li>
                 </ul>
 
@@ -53,40 +53,28 @@
         </div>
     </nav>
 
-    <!-- Carousel -->
 
-    <div class="container-fluid p-0" id="header">
-        <div class="row">
-            <div class="col-md-12">
 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Header  carousel-->
 
-                    <!-- imagens for slides -->
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active pr-0">
-                            <img src="imagens/capacut.png" alt="first slide">
-                            <div class="carousel-caption" style="text-align:left; width: 100%;">
-                                <h1>Camis Monteiro (Camon)</h3>
-                                    <h3>Sou Front-end Dev, Designer com foco em Iot - Wearables</h3>
-                                    <h3>Conheça mais na aba projetos</h3>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-
-            </div>
-        </div>
-
+     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
+  <div "class="carousel-inner" >
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="imagens/capacut.png" alt="First slide" >
+    </div>
+    
+    </div>
+  </div>
+</div>
+    
 
                                   <!-- footer -->
 
                                  <!--  footer logo-->
 
-            <div id="footer" class="navbar navbar-light bg-light  d-flex justify-content-around p-4" >
+     <div id="footer" class="navbar navbar-light bg-light  d-flex justify-content-around" >
             <a class="navbar-brand" href="index.html">
-            <img src="imagens/camon.png""  style="width: 150px; font-family: Verdana, Geneva, Tahoma, sans-serif;" alt="logo escrito marmitee">
+            <img src="imagens/camon.png""  style="width: 150px; font-family: Verdana, Geneva, Tahoma, sans-serif;" alt="logo escrito camon">
             </a>
 
                               <!--  footer mapa -->
@@ -101,8 +89,8 @@
                       <a class="nav-link" href="projetos.html">Projetos</a>
                   </li>
 
-                  <li class="nav-item dropdown" style="border: solid; border-radius: 20px; border-color: gray;">
-                      <a class="nav-link" target="_blank" href="http://www.camonecofashion.wordpress.com">Camon</a>
+                  <li class="nav-item dropdown" style="">
+                      <a id="btnca" class="nav-link bg-dark text-white" target="_blank" href="http://www.camonecofashion.wordpress.com">Camon</a>
                   </li>
               </ul>
             </ul>
@@ -115,7 +103,7 @@
                  </li>
              </ul>
 
-              <div id="midias" class="">
+        <div id="midias" class="">
                   <a target="_blank" href="http://www.facebook.com/monteirocamis">
                      <img src="imagens/facebook.png">
                    </a>
@@ -130,8 +118,9 @@
                         <img src="imagens/wordpress.png">
                       </a>
                       -->
-                  </div>
-                </div>
+         </div>
+    </div>
+
             </div>
 
 
