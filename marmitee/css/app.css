@@ -1,0 +1,159 @@
+/* #region header */
+.app-header {
+    background: url('../fotos/strawberry.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.app-header h1 {
+    color: indigo;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.7rem;
+    text-align: center;
+}
+@media(min-width:768px) {
+    .app-header div {
+        padding: 1rem;
+        width: 45vw;
+    }
+    .app-header h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: right;
+    }
+}
+@media(min-width:1024px) {
+    .app-header div {
+        width: 40vw;
+    }
+    .app-header h1 {
+        font-size: 2.5rem;
+    }
+}
+/* #endregion */
+
+/* #region app01 */
+.app-chamada {
+    color: #6BBEC6;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+}
+
+.app-imagem img {
+    max-height: 50vh;
+}
+
+.app-icones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.app-icones p {
+    max-width: 90%;
+}
+
+.app-funcionalidades1{
+    display: none;
+}
+.app-funcionalidades2 {
+    grid-area: icones2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.app-funcionalidades3 {
+    grid-area: icones3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app-imagem {
+    grid-area: imagem-celular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-infos {
+    grid-area: infos;
+    text-align: center;
+    margin: 3vh 15vw;
+}
+
+.grid-app01-conteudo {
+    display: grid;
+    grid-template-areas: 'imagem-celular' 'icones2' 'icones3' 'infos';
+    width: 100%;
+    height: 70vh;
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vw;
+}
+
+.app01 {
+    margin-bottom: 80vh;
+}
+
+@media(min-width:425px) {
+    .app01 {
+        margin-bottom: 70vh;
+    }
+} 
+@media(min-width:768px) {
+    .app-imagem img {
+        max-height: 60vh;
+    }
+    .app-funcionalidades1 {
+        grid-area: icones1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .app-funcionalidades2 {
+        grid-area: icones2;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .app-funcionalidades3 {
+        display: none;
+    }
+    .app-icones {
+        max-width: 128px;
+    }
+    .app-imagem {
+        grid-area: imagem-celular;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-app01-conteudo {
+        grid-template-areas: 'icones1 imagem-celular icones2' 'infos infos infos';
+    }
+    .app01 {
+        margin: 5vh 0 40vh 0;
+    }
+}
+@media(min-width:1024px) {
+    .app01 {
+        margin-bottom: 25vh;
+    }
+}
+@media(min-width:1440px) {
+    .app01 {
+        margin-bottom: 10vh;
+    }
+}
+
+/* #endregion */

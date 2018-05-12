@@ -1,0 +1,186 @@
+
+.nutri-header {
+    padding: 25vh 0 10vh 0;
+    margin-bottom: 5vh;
+    background: url("../fotos/pumpkin-soup-2972858_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+
+    /* text-shadow: 3px 3px 1px gray; */
+}
+
+
+/* #region nutri01 */
+.nutri01 h1 {
+    text-align: center;
+}
+.nutri01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.nutri01-grid {
+    grid-template-areas: 'nutri01' 'nutri02';
+    height: 115vh;
+}
+
+.nutri-imagem img {
+    max-height: 30vh;
+    max-width: 100%;
+}
+
+.nutri-chamada {
+    grid-area: chamada-nutri;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+}
+.nutri-imagem {
+    grid-area: imagem-nutri;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 50%;
+    margin: auto;
+}
+.grid-nutri01-conteudo {
+    grid-area: nutri01;
+    display: grid;
+    grid-template-areas: 'imagem-nutri' 'chamada-nutri';
+    width: 70vw;
+    height: 45%;
+    grid-gap: 8vh;
+}
+.grid-nutri02-conteudo {
+    grid-area: nutri02;
+    display: grid;
+    grid-template-areas: 'imagem-nutri' 'chamada-nutri';
+    width: 70vw;
+    height: 45%;
+    grid-gap: 9vh;
+    
+}
+
+.junte-se {
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border-radius:0.3em;
+    text-decoration:none;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    background-image: linear-gradient(to bottom, #ed9024, #f6d39e);
+    text-transform: uppercase;
+    text-shadow: 0 0.04em 0.04em rgba(115, 115, 115, 0.35);
+}
+.junte-se:hover {
+    background-image: linear-gradient(to bottom, #f6d39e, #ed9024);
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:768px) {
+    .grid-nutri01-conteudo {
+        grid-template-areas: 'chamada-nutri imagem-nutri';
+        margin-bottom: 5vh;
+    }
+    .grid-nutri02-conteudo {
+        grid-template-areas: 'imagem-nutri chamada-nutri';
+        margin-bottom: 5vh;
+    }
+    .nutri-chamada {
+        padding: 5vh 0;
+    }
+    .nutri01-grid {
+        height: 80vh;
+    }
+}    
+/* #endregion */
+
+/* #region porque */
+.nutri-container {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    margin: auto;
+}
+
+.nutri-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: ghostwhite;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f6d39e;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.nutri-container:hover .overlay {
+    height: 100%;
+}
+
+.nutri-card2 {
+    /* color: white; */
+    /* font-size: 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.porque-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90vw;
+    grid-gap: 1rem; 
+}
+
+@media(min-width: 768px) {
+    .porque-grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 80vw;
+        grid-gap: 2rem;
+    }
+    .nutri-container {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+.porque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.porque h2 {
+    margin-bottom: 3vh; 
+}
+
+/* #endregion */
+

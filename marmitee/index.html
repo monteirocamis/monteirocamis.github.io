@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <img class="navbar-brand" style="width: 150px;" src="fotos/logo-marmitee.png" alt="logo marmitee">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section-sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="app.html">Aplicativo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fornecedores.html">Fornecedores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contato</a>
+            </li>
+           
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid"></header>
+
+    <section class="container text-center" id="section-sobre">
+        <!-- <h2>A Marmitee</h2> -->
+        <div class="row sessao-sobre">
+            <img class="sobre-image" src="fotos/mulheres.jpg" alt="">
+            <div class="col-lg-6">
+                <h3>A Marmitee</h3>
+                <p class="sobre-text">Na Marmitee você encontra Sabor, Saúde e Nutrição dia a dia. 
+                    Através de uma rede de nutricionistas especialmente selecionadas, você poderá encontrar o melhor para sua alimentação. Pensado para pessoas com diferentes necessidades de uma alimentação adequada, aqui você encontra uma nutricionista de acordo com a especialidade que procura: seja por um problema de saúde ou por uma reeducação alimentar.</p>
+            </div>
+        </div>
+        <div class="row sessao-sobre">
+            <div class="col-lg-6">
+                <!-- <h3>Nossa Missão</h3> -->
+                <p class="sobre-text">Depois é só pedir o cardápio que melhor te atende, que um dos nossos fornecedores prepara pra você! A nossa curadoria é feita cuidadosamente pensando no melhor para sua saúde e também para o seu bolso! Nosso intuito é ver você saudável e feliz!</p>
+            </div>
+            <img class="sobre-image" src="fotos/exemplo1.jpg" alt="">
+        </div>
+    </section>
+    
+    <section class="container m-4" id="section-app">
+        <div class="row">
+            <div class="col-lg-8 pull-left device-container"><img class="w-100" src="fotos/mockup-app.png" alt=""></div>
+            <div id="carousel-app" class="carousel slide col-lg-4 pull-right" data-ride="carousel">
+                <div class="caurosel-inner"> 
+                    <div class="carousel-item active">
+                        <p class="carousel-text">Através do nosso APP você encontra diversas opções de refeições saudáveis e nutricionistas.</p>
+                    </div>
+                    <div class="carousel-item"> 
+                        <p class="carousel-text">Tenha um atendimento totalmente personalizado, de acordo com a sua rotina, atividade física e gosto alimentar. Aprenda a se alimentar de forma correta!</p>
+                    </div>
+                    <div class="carousel-item"> 
+                        <p class="carousel-text">Orientações direcionadas com o objetivo de melhorar a qualidade de vida e garantir maior longevidade.</p>
+                    </div>
+                </div>
+
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel-app" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-app" data-slide-to="1"></li>
+                    <li data-target="#carousel-app" data-slide-to="2"></li>
+                </ul>
+
+                <!-- <a class="carousel-control-prev" href="#carousel-app" data-slide="prev"><span class="carousel-control-prev-icon"></span></a> -->
+                <a class="carousel-control-next" href="#carousel-app" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-fornecedores">
+        <h3>Seja nosso parceiro!</h3>
+        <div class="row">
+            <a href="fornecedores.html" class="f1-container">
+                <h2 class="chamada-fornecedores">Sou Nutricionista</h2>
+                <div class="f1-card" class="shadow">
+                    <div id="image-flip-1" class="front face image-flip"></div>
+                    <div class="back face center">
+                        <p class="fornecedores-text">Sou nutricionista e adoro meu trabalho prezo pela alimentação saudável, faço atendimento nutricional ou faço marmitas saudáveis.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="fornecedores.html" class="f1-container">
+                <h2 class="chamada-fornecedores">Faço marmitas</h2>
+                <div class="f1-card" class="shadow">
+                    <div id="image-flip-2" class="front face image-flip"></div>
+                    <div class="back face center">
+                        <p class="fornecedores-text">Quero ser fornecedor, faço marmitas nutricionais e saudáveis.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="section-newsletter">
+        <h3 class="title m-4">Receba nossa newsletter e fique por dentro das novidades!</h3>
+        <div class="formulario" >
+            <a class="junte-se" href="https://goo.gl/forms/NciJoS1Oc7xTheCN2" target="_blank">Cadastre-se!</a>
+        </div>
+    </section>
+
+                                <!--  footer logo-->
+
+    <div id="footer" class="navbar navbar-light bg-light  d-flex justify-content-around p-4" >
+      <a class="navbar-brand" href="index.html">
+        <img src="./fotos/logo-marmitee.png"  style="width: 150px; font-family: Verdana, Geneva, Tahoma, sans-serif;" alt="logo escrito marmitee">
+      </a>
+
+                             <!--  footer mapa -->
+
+          <ul  class="nav flex-column" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                  <li class="nav-item" >
+                    <a class="nav-link"  href="index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link"  href="app.html">Aplicativo</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link " href="fornecedores.html">Fornecedores</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Sobre</a>
+                  </li>
+
+                  
+
+          </ul>
+                            <!--  footer midias-->
+            <ul class="nav">       
+                <li class="nav-item" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    <p class="text-secondary" style=" padding-top: 20px; font-size: 15px;">bemarmitee@marmitee.com</p>
+                    <p class="text-secondary" style=" text-align:center;font-size: 15px;">Tel 11 987913698</p>
+                </li>
+            </ul>
+
+             <div id="midias" class="">
+                 <a href="http://www.facebook.com/amarmitee">
+                    <img src="fotos/facebook.png">
+                  </a>
+
+        
+                 </div>
+
+               </div>
+
+
+                    
+
+    </div>
+                  <!--  footer feito por -->
+
+    <nav id="feitopor" class="navbar d-flex justify-content-center" style="padding:0;font-family: Verdana, Geneva, Tahoma, sans-serif;padding-left: 120px;">
+            Feito por alunas<a class="navbar-brand" href="www.reprograma.com.br"> 
+                 <img style="width: 100px; padding-left: 10px;" src="fotos/logo-reprograma.png">
+             </a>
+    </nav>
+
+      </div>
+    </div>
+
+</body>
+</html>

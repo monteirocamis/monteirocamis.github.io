@@ -1,0 +1,246 @@
+
+* {
+    color: gray;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media(min-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 1024px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    margin: auto 0;
+}
+
+nav {
+    background-color: rgba(219, 205, 205, 0.233);
+}
+
+#navbarTogglerDemo02 ul li a:hover {
+    color: #EE900E;
+}
+
+header {
+    background: url(../fotos/Marmitee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 88vh;
+    margin-bottom: 10px;
+}
+
+.f1-container {
+    position: relative;
+    margin: 10px auto;
+    width: 500px;
+    height: 325px;
+    z-index: 1;
+    perspective: 1000;
+}
+
+.f1-card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    margin: 20px;
+}
+
+.f1-container:hover .f1-card {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.face.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgb(112, 109, 109);
+}
+
+.image-flip {
+    width: 500px;
+    height: 325px;
+}
+
+#image-flip-1 {
+    background: url(../fotos/nutricionist.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#image-flip-2 {
+    background: url(../fotos/marmitas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.device-container {
+    background-color: #fff;
+    z-index: 40;
+}
+
+.carousel-text {
+    width: 300px;
+    margin-top: 90px;
+}
+
+.junte-se {
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border-radius:0.3em;
+    text-decoration:none;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    background-image: linear-gradient(to bottom, #ed9024, #f6d39e);
+    text-transform: uppercase;
+    text-shadow: 0 0.04em 0.04em rgba(115, 115, 115, 0.35);
+}
+.junte-se:hover {
+    background-image: linear-gradient(to bottom, #f6d39e, #ed9024);
+    text-decoration: none;
+    color: black;
+}
+
+#newsletteremail {
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border-radius:0.3em;
+    width: 40%;
+}
+
+.section-newsletter {
+    background-color: #f0bf77;
+    text-align: center;
+    padding: 10px 0px 40px 0px;
+}
+
+.chamada-fornecedores {
+    font-size: 24px;
+    color: grey;
+}
+
+.section-fornecedores {
+    padding: 10px 95px 95px 95px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.section-fornecedores h3 {
+    margin: 10px 50px 50px 50px;
+}
+
+.fornecedores-text {
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.sobre-text {
+    font-size: 18px;
+}
+
+.sobre-image {
+    width: 450px;;
+    height: 250px;
+    margin: 40px;
+}
+
+.sessao-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*#region footer*/
+#logo-footer {
+    width: 35vw;
+}
+.telefone {
+    text-align: center;
+}
+/* link não visitados  */
+ #footer a:link {
+    color: gray;
+}
+/* link visitados */
+#footer a:visited {
+    color: gray;
+}
+/* mouse no link */
+#footer ul li a:hover {
+    color: #EE900E;
+    text-decoration: none;
+}
+/* link selecionados */
+#footer a:active {
+    color: gray;
+} 
+
+/*footer feitopor*/
+#feitopor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2b2b2b;
+}
+#feitopor p{
+    margin: 0;
+}
+#feitopor img {
+    max-height: 3vh;
+}
+#feitopor-link {
+    margin-left: 0.3rem;
+}
+
+@media(min-width:768px) {
+    #feitopor p{
+        font-size: 0.8rem;
+    }
+    #logo-footer {
+        width: 20vw;
+    }
+}
+@media(min-width:1024px) {
+    #feitopor img {
+        max-height: 2vh;
+    }
+    #logo-footer {
+        width: 15vw;
+    }
+}
+/* #endregion */
