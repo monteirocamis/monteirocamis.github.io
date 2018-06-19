@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>Studio Dookie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('imagensstdk/equipo.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+    <p><button onclick="document.getElementById('equipamentos').style.display='block'" class="w3-button w3-black">equipamentos</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">agende</button></p>
+
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">24 Horas</p>
+    <p class="w3-large">Av. do Cursino, 1200 - São Paulo</p>
+    <!-- midias footer -->
+                        <div id="midias" class="">
+                          <a href="http://www.facebook.com/studiodookie" target="_blank">
+                              <img style="width: 40px;" src="imagensstdk/facebook.ico">
+                             </a>
+                             <a href="http://www.instagram.com/studiodookie"target="_blank" >
+                              <img style="width: 35px;" src="imagensstdk/instagramq.ico">
+                             </a>
+                             <a href="http://www.youtube.com/" target="_blank">
+                              <img style="width: 35px;" src="imagensstdk/youtube.png">
+                             </a>
+    <p>by<a href="https://www.monteirocamis.github.io/home.html" target="_blank">Camis</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Ensaios</h1>
+    </div>
+    <div class="w3-container w3-white ">
+      <h5>Hora Sala <b>R$45,00</b></h5>
+      <h5>Hora dupla sala <b>R$80,00</b></h5>
+           <h5>Diária , até 12 horas <b>R$450,00</b></h5>
+
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Gravações</h1>
+    </div>
+    <div class="w3-container w3-white">
+      <h5>Sala sem mixagem , até quatro horas<b>$xxx,00 </b></h5>
+      <h5>Sala sem mixagem , diária até 12 horas<b>$xxx,00 </b></h5>
+      <br>
+      <h5>Sala e mixagem ,  até quatro horas<b>$xxx,00 </b></h5>
+      <h5>Diária Sala e mixagem ,  até 12 horas horas<b>$xxx,00 </b></h5>
+
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Aluguel de equipamento</h1>
+    </div>
+    <div class="w3-container w3-white">
+    	<h4> Caixas </h4>
+      <h5>Caixa X <b>$xx,00 </b></h5>
+      <h5>Caixa Y <b>$xx,00 </b></h5>
+       <h5>Caixa x <b>$xx,00 </b></h5>
+<br>
+<h4> Microfones </h4>
+        <h5>Microfone  x <b>$xx,00 </b></h5>
+ <h5>Microfone Y <b>$xx,00 </b></h5>
+  <h5>Microfone Z <b>$xx,00 </b></h5>
+
+<br>
+<h4> Pratos </h4>
+   <h5>Prato X <b>$xx,00 </b></h5>
+   <h5>Prato Y <b>$xx,00 </b></h5>
+   <h5>Prato Z <b>$xx,00 </b></h5>
+  
+
+    </div>
+  </div>
+</div>
+
+<!-- equipamentos modal -->
+<div id="equipamentos" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('equipamentos').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+
+    </div>
+
+      <div style="background-color: black;" >
+     <img src="imagensstdk/equipoantigo.jpg" >
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- agende Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black " style="display: block,align-items: center;">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <div class="d-flex flex-column" style="margin: 10px 10px 20px 10px;">
+      <h1>Agende</h1>
+</div>
+<div class="d-flex flex-column" style="margin: 10px 40px 40px 40px;">
+  		<h2 style="align-items: center;">Preencha o formulário que está neste link abaixo</h2>
+
+
+
+			<a class="btn btn-light"  href="https://goo.gl/forms/3EONMIxTBDbVtSho1" target="_blank" role="button" style="background-color: #56348c;border-color: #56348c;color: white;"> Agende aqui</a>
+				
+				</div>
+
+    </div>
+    <div class="w3-container">
+
+
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
