@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula 8 - JavaScript | Formação Desenvolvedor Web Full-Stack Essencial</title>		
+		<meta name="description" content="Como criar websites interativos e inteligentes através da linguagem JavaScript e suas funcionalidades." />	
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+		
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		
+		<style>
+		
+			@import url('https://fonts.googleapis.com/css?family=Roboto');
+		
+			*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: 'Roboto', sans-serif;
+			}
+			
+		
+		
+			main {
+				width: 100%;
+				max-width:1290px;
+				margin:auto;
+				
+				margin-top:15px;
+			}
+
+			.destaque{
+				padding: 1em;
+				color: #fff;
+				background-color: #0a4f5f;
+				text-align: center;
+			}
+			
+			nav {
+				float:left;
+				padding: 1em;
+				width:20%;
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+			}
+			   
+			nav ul a {
+				text-decoration: none;
+				background-color:#e0e0e0;
+				display:block;
+				padding:8px;
+				margin-bottom:4px;
+				color:#0a4f5f;
+				border-radius:3px;
+			}
+			
+			nav ul a:hover {
+				background-color:#d5d5d5;
+			}
+
+			#conteudo {
+				border-left: 1px solid #c0c0c0;
+				padding: 1em;
+				float:right;
+				width:80%;
+			}
+			
+			#conteudo p{
+				margin:15px 0;
+			}
+			
+			main > footer{
+				clear:both
+			}
+			
+			@media (max-width: 600px){
+				nav, #conteudo{width:100%}
+			}
+			
+			form{
+				background-color:#e0e0e0;
+				padding:20px;
+			}
+			
+			form *{
+				margin:5px 0
+			}
+			
+			form input{
+				padding:10px 15px;
+				border:none;
+				width:100%
+			}
+			
+			form button{
+				padding:10px 15px
+			}
+			
+			#msg{
+				text-align:center;
+				background-color:#bfff84;
+				padding: 1em;
+				display:none;
+			}
+				
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		
+
+	
+		<main>
+		
+			<header class="destaque">
+			   <h1>Formação Desenvolvedor Web Full-Stack Essencial</h1>
+			</header>
+		
+			<nav>
+				<ul>
+					<li><a href="http://localhost/formacao-web/aula6"><i class="fab fa-html5"></i> HTML</a></li>
+					<li><a href="http://localhost/formacao-web/aula7"><i class="fab fa-css3-alt"></i> CSS</a></li>
+					<li><a href="http://localhost/formacao-web/aula8"><i class="fab fa-js-square"></i> JavaScript</a></li>
+					<li><a href="https://getbootstrap.com"><i class="far fa-object-group"></i> Bootstrap + jQuery</a></li>
+				</ul>
+			</nav>
+
+			<article id="conteudo">
+				<header class="destaque">
+					<h2>Aula 8 - JavaScript</h2>
+				</header>
+				<p>Como criar websites interativos e inteligentes através da linguagem JavaScript e suas funcionalidades.</p>
+				<form id="form">
+					<input type="hidden" name="form" value="OK">
+					Nome do Filme:<br>
+					<input type="text" name="nome-filme" id="nome-filme"><br>
+					Tempo do Filme (min):<br>
+					<input type="number" name="tempo-filme" id="tempo-filme"><br>
+					<button type="submit" value="Enviar">Enviar</button>
+				</form>
+				
+			</article>
+			
+			<footer class="destaque">Copyright &copy; Formação Desenvolvedor Web Full-Stack Essencial</footer>
+
+			<div id="msg"></div>
+			
+		</main>
+
+		
+		<script>
+		
+
+		
+			document.getElementById('form').addEventListener("submit", function(event) {
+				event.preventDefault();
+				
+				nome_filme = document.getElementById('nome-filme').value;
+				tempo_filme = document.getElementById('tempo-filme').value;
+				
+				if(nome_filme != "" && tempo_filme != ""){
+					this.submit();
+				}else{
+					alert("Preencha corretamente todos os campos");
+				}
+			});
+			
+
+			function pegarGet(url){
+				qs = url.slice(url.indexOf('?')+1);
+				qss = qs.split('&');
+				return qss;
+			}
+			
+			parametros = pegarGet(window.location.href);
+			
+			console.log(decodeURIComponent(parametros[1].split("=")[1]));
+			
+			controle = parametros[0].split("=")[1];
+			filme = decodeURIComponent(parametros[1].split("=")[1]);
+			tempo = parametros[2].split("=")[1];
+
+			if(controle == 'OK'){
+				document.getElementById('msg').style.display = 'block';
+				document.getElementById('msg').innerHTML = "<i class='fas fa-check'></i> Você enviou os dados do filme [ " + filme + " ] que tem [ " + tempo + " ] minutos de duração";
+			}
+
+		
+		
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,202 @@
+
+
+h5,h4,a{
+	font-family: 'Anton',sans-serif;
+	color: white;
+	padding-bottom: 40px;
+
+}
+
+
+h2{
+  font-family: 'Anton',sans-serif;
+  color: white;
+}
+
+h5{
+font-size: 50px;
+}
+
+
+
+
+h1{
+font-size: 80px;
+font-family: 'Anton',sans-serif;
+color: #5D1277;
+
+}
+h3{
+	 font-family: 'Open Sans', sans-serif;
+   font-size: 30px;
+   color: #5D1277;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+#paragsobre{
+	font-size: 30px;
+}
+
+/*maravilhoso codigo para manter imagem do carousel com as medidas originais!! */
+
+#fotojumbotron{
+  position-relative;
+    min-width: 100%;
+    height: 100%; /* Altura da imagem dentro do Carousel */
+}
+
+.carousel-inner img {
+    position-relative;
+    min-width: 100%;
+    height: 100%; /* Altura da imagem dentro do Carousel */
+}
+
+
+
+
+
+#btnparticipenav{
+  background-color: white;
+  border-radius: 50px;
+  color: gray !important;
+  height: 90%;
+  text-align: center;;
+}
+#btnparticipenav:hover {
+  background-color:  #5D1277 !important;
+  border-radius: 50px;
+  color: gray !important;
+  height: 90%;
+  text-align: center;;
+}
+
+#btnparticipe {
+  background-color: white !important;
+   color: #5D1277 !important;
+   text-decoration: none;
+   border-radius: 50px;
+}
+
+#btnparticipe:hover {
+  background-color:  #5D1277 !important;
+   color: white !important;
+   text-decoration: none;
+   border-radius: 50px;
+}
+
+
+
+/* FOOTER*/
+/* link não visitados  */
+#footer a:link {
+   color: white;
+}
+
+/* link visitados */
+#footer a:visited {
+   color: white;
+}
+
+/* mouse no link */
+#footer a:hover {
+   color: gray;
+    text-decoration: none;
+}
+
+/* link selecionados */
+#footer a:active {
+   color: white;
+}
+
+#album{
+	text-color: white;
+background-image: url("imagens/sobre.png");
+}
+
+#sobre h2{
+	padding-bottom: 40px;
+}
+
+
+#jumbo{
+  color: #5D1277;
+  font-family: 'Open Sans', sans-serif ;
+  padding: 50px;
+ text-align: center;
+}
+
+
+/*paralax*/
+
+/*paralax header*/
+
+.header-site{
+  background-image: url(imagens/pixabayled.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 400px;
+  padding-bottom: 400px;
+
+  
+}
+
+
+
+.content-sobre{
+  background-image: url(imagens/lily.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 400px;
+  padding-bottom: 400px;
+}
+
+#sobre-escrito{
+  background-color: #3D2860;
+  color: white;
+}
+
+#img-divisoria{
+  background-image: url(imagens/.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.content-kit{
+  background-image: url(imagens/lily.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+#faixa-proximoencontro{
+  padding: 20px;
+}
+
+#faixa-participe{
+  padding: 20px;
+}
+#header-projetos{
+  background-image: url(imagens/pixabaynote.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 400px;
+  padding-bottom: 400px;
+
+  
+}
