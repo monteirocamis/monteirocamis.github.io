@@ -1,0 +1,171 @@
+
+
+
+											/* GERAL*/
+	html, body, .capa{
+		height: 100%;
+	}
+
+body {
+	
+	background: url('imagens/capaspotify.png'),
+				url('imagens/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family:Helvetica, Arial, sans-serif;
+	overflow-x: hidden;// esconder a barra vertical/horizontal overflow y ou y
+}
+
+		
+
+
+											/* barra de nav*/
+
+.img-logo{
+	height: 40px;
+	width:  132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0, 0, 0,0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #9bf0e1;
+	background: none;
+}
+
+										/*imagem de capa*/
+.capa {
+	display:table;
+	width: 100%;
+}
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+		
+											/*tipografia*/
+h1 {		
+	font-size: 100px;
+	font-weight: 900;
+	font-family:  Helvetica,Arial, sans-serif;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+#rodape h4{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+
+#serviços h2, #serviços h3 {
+	color: #7c25f8;
+}
+#recursos h3 {
+	color: #9bf0e1;
+}
+
+												/*botoes*/
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin: 0px 15px;
+	transition: background 0.4s, color 0.4s; /*on hover suave*/
+}
+.btn-custom:hover{
+	color: white;
+}/*eu que fiz esse btn-custom hover pq na udemy fala pra por em btn roxo e nao funcionou*/
+
+.btn-roxo{
+	background: #7c25f8;
+}
+.btn-roxo:hover{
+	background-color: #6207e3;
+}
+
+.btn-branco{
+	border: 2px solid white;
+
+}
+.btn-branco:hover{
+	background-color: white;
+	color: black;
+}
+
+												/*serviços*/
+#serviços{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
+}
+
+												/*recursos*/
+#recursos{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotacionar{
+	transform: rotate(30deg);
+			-webkit-transform: rotate(30deg); /*chrome safari e opera*/
+			-ms-transform: rotate(30deg); /*IE 9*/
+	padding-left: 80px;
+}
+
+												/* footer*/
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social{
+	float: right;
+}
