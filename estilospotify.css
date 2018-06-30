@@ -4,6 +4,7 @@
 											/* GERAL*/
 	html, body, .capa{
 		height: 100%;
+		overflow: auto; /* so aparece barra de rolagem caso for necessaria*/
 	}
 
 body {
@@ -70,14 +71,14 @@ body {
 		
 											/*tipografia*/
 h1 {		
-	font-size: 100px;
+	/*font-size: 100px;*/
 	font-weight: 900;
 	font-family:  Helvetica,Arial, sans-serif;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
 }
 
-h2{
+/*h2{
 	font-size: 50px;
 	font-weight: 700;
 	letter-spacing: 0.04em;
@@ -87,7 +88,7 @@ h3{
 	font-size: 35px;
 	font-weight: 700;
 	letter-spacing: 0.04em;
-}
+}*/
 
 #rodape h4{
 	color: #919496;
@@ -110,10 +111,13 @@ h3{
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px;
 	padding: 10px 35px;
-	text-transform: uppercase;
 	margin: 0px 15px;
+	text-transform: uppercase;
 	transition: background 0.4s, color 0.4s; /*on hover suave*/
 }
+
+
+
 .btn-custom:hover{
 	color: white;
 }/*eu que fiz esse btn-custom hover pq na udemy fala pra por em btn roxo e nao funcionou*/
@@ -152,12 +156,7 @@ h3{
 	color: white;
 }
 
-.rotacionar{
-	transform: rotate(30deg);
-			-webkit-transform: rotate(30deg); /*chrome safari e opera*/
-			-ms-transform: rotate(30deg); /*IE 9*/
-	padding-left: 80px;
-}
+
 
 												/* footer*/
 footer{
@@ -166,6 +165,104 @@ footer{
 	position: relative;
 }
 
-.item-rede-social{
+/*.item-rede-social{
 	float: right;
+}*/
+
+											/* media queries mobile 767*/
+@media screen and (max-width: 767px){
+	.btn-custom{
+		margin-top: 15px;
+	}
+	h1{
+		font-size: 50px;
+	}
+
+	h2{
+		font-size: 50px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+	}
+
+	h3{
+		font-size: 35px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+	}
+	.item-rede-social{
+	float: left;
+	}
 }
+
+
+
+
+										/* media queries tablet mobile 768*/
+@media screen and (min-width: 768px){
+	h1{
+		font-size: 70px;
+	}
+	
+	.rotacionar{
+	transform: rotate(30deg);
+			-webkit-transform: rotate(30deg); /*chrome safari e opera*/
+			-ms-transform: rotate(30deg); /*IE 9*/
+	padding-left: 80px;
+	}
+	.item-rede-social{
+	float: left;
+	}
+	
+}
+
+										/* media queries tablet md 992*/
+@media screen and (min-width: 992){
+	h1{
+		font-size: 80px;
+	}
+	.btn-custom{
+		margin: 0px 15px;
+	}
+	.rotacionar{
+	transform: rotate(30deg);
+			-webkit-transform: rotate(30deg); /*chrome safari e opera*/
+			-ms-transform: rotate(30deg); /*IE 9*/
+	padding-left: 80px;
+	}
+	.item-rede-social{
+	float: right;
+	}
+}
+
+
+										/* media queries monitor lg 1200*/
+@media screen and (min-width: 1200){
+	h1{
+		font-size: 100px;
+	}
+}
+@media screen and (min-width: 1200){
+.rotacionar{
+		transform: rotate(30deg);
+			-webkit-transform: rotate(30deg); /*chrome safari e opera*/
+			-ms-transform: rotate(30deg); /*IE 9*/
+		padding-left: 80px;
+	}
+	.item-rede-social{
+	float: right;
+	}
+}
+
+
+/*
+mudanças em medias
+font OK
+botoes espaço OK
+imgs peqs desgruda OK
+imagens desrotaciona em mobile ok
+footer mapa  OK
+footer midias  OK
+tirar divisor em mobile dropdown 
+
+arrumar bug da nav dropdown collapse em mobile OK
+*/
