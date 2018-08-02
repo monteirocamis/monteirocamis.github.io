@@ -1,5 +1,4 @@
 
-
 h5,h4,a{
 	font-family: 'Anton',sans-serif;
 	color: white;
@@ -141,20 +140,14 @@ background-image: url("imagens/sobre.png");
   background-attachment: fixed;
   padding-top: 400px;
   padding-bottom: 400px;
+
+  
 }
 
-#img-divisoria{
+
+
+.content-sobre{
   background-image: url(imagens/lily.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-#content{
-  background-image: url( monteirocamis.github.io/imagens/lily.JPG );
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -168,7 +161,15 @@ background-image: url("imagens/sobre.png");
   color: white;
 }
 
-
+#img-divisoria{
+  background-image: url(imagens/lily.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 
 .content-kit{
   background-image: url(imagens/lily.jpg);
