@@ -148,7 +148,7 @@ background-image: url("imagens/sobre.png");
 
 
 .content-sobre{
-  background-image: url(imagens/lily.jpg);
+  background-image: url(../imagens/lily.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
