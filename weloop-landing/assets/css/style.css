@@ -1,0 +1,291 @@
+:root {
+  --main-indigo-color: #604def;
+  --main-green-color: #00da97;
+  --main-text-color: #2c3238;
+  --secondary-text-color: #6f7982;
+  --bg-light-gray-color: #f6f8fc;
+  --dark-indigo-color: #5f4cbb;
+  --light-dark-text-color: #8a99c0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.navbar>.container, .navbar>.container-fluid {
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: var(--main-text-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-text-color);
+}
+
+.text-success {
+  color: var(--main-green-color) !important;
+}
+
+.bg-light-gray {
+  background-color: var(--bg-light-gray-color);
+}
+
+.btn {
+  padding: 5px 40px;
+}
+
+.btn-primary {
+  background-color: var(--main-indigo-color);
+  border-color: var(--main-indigo-color);
+}
+
+.btn-success {
+  background-color: var(--main-green-color);
+  border-color: var(--main-green-color);
+}
+
+.bg-primary {
+  background: var(--dark-indigo-color) !important;
+}
+
+.hero {
+  background-image: linear-gradient(#ffffff, #f6f8fc);
+}
+
+.funcionality .card {
+	height: 18rem;
+	background-color: transparent;
+	border: none;
+	transition: 0.3s;
+}
+
+.funcionality .card.outline {
+	border: 1px dashed var(--main-indigo-color);
+}
+
+.funcionality .card.active {
+	background-color: #fff;
+	border-bottom: var(--main-indigo-color) solid 5px;
+	-webkit-box-shadow: 10px 10px 23px -15px rgba(173,173,173,1);
+	-moz-box-shadow: 10px 10px 23px -15px rgba(173,173,173,1);
+	box-shadow: 10px 10px 23px -15px rgba(173,173,173,1);
+}
+
+.clients-thumb {
+  width: 100%;
+  max-width: 10rem;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: .5;
+}
+
+.clients-thumb:hover {
+  opacity: 1;
+}
+
+.newsletter-form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 12px;
+  color: #ced4da;
+}
+
+.newsletter-form button {
+  line-height: 1.8;
+}
+
+footer {
+  color: var(--light-dark-text-color);
+  font-size: 12px;
+}
+
+footer a {
+  color: var(--light-dark-text-color);
+}
+
+.signup-form .form-group {
+  border-bottom: 1px solid #eee;
+}
+
+.signup-form input,
+.signup-form select {
+  border: 0;
+}
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+  margin: 0 .5rem;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+  padding-right: 1rem;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+  padding-right: 1rem;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: var(--main-indigo-color);
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 767px) {
+  .featured {
+    flex-direction: column-reverse;
+  }
+  .featured img,
+  .featured-two img {
+    margin-bottom: 2rem;
+  }
+  .menu-bottom {
+    text-align: center;
+  }
+  .newsletter {
+    margin-top: 2rem;
+  }
+  .newsletter-form button,
+  .newsletter-form input {
+    width: 100% !important;
+    margin-top: 1rem;
+  }
+  footer .container-fluid {
+    flex-direction: column;
+  }
+  footer .copyrights {
+    text-align: center !important;
+    order: 3;
+  }
+  footer .social-media {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .newsletter-form button,
+  .newsletter-form input {
+    width: 100% !important;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .newsletter-form input {
+    margin-right: 5px;
+  }
+}

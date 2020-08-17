@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Project CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700|Rubik:400,700&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <!-- Facebook Open Graph Properties -->
+    <meta property="og:url"                content="https://we-loop.com/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Weloop - Conectando produtos a pessoas" />
+    <meta property="og:description"        content="Uma plataforma all-in-one para comercializar e cuidar das suas roupas" />
+    <meta property="og:image"              content="assets/image/og-image.png" />
+
+
+
+    <title>Cadastre-se | Weloop - Conectando produtos a pessoas</title>
+  </head>
+  <body>
+    <!-- Weloop Logo -->
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">we<strong>loop</strong></a>
+      </div>
+    </nav>
+    <!-- Signup Section -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-2 col-lg-8">
+            <h2 class="mb-3 text-center">Entre para a nossa lista de espera!</h2>
+            <p class="text-center mb-5">Seja o primeiro(a) a testar  Weloop</p>
+            <form class="signup-form" action="/api/users" method="POST">
+              <div class="form-group">
+                <input type="text" name="first_name" class="form-control" placeholder="Nome *" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="last_name" class="form-control" placeholder="Sobrenome *" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="E-mail *" required>
+              </div>              
+              <div class="form-group">
+                <input type="text" name="zip_code" class="form-control" placeholder="CEP *" required>
+              </div>
+          </div>
+          <div class="offset-lg-2 col-lg-8 mt-5">
+            <div class="container">
+              <h5 class="text-center">O que você gostaria de fazer com suas roupas?</h3>
+              <p class="text-center mb-5">Selecione até três opções</p>
+              <div class="row">
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="rent" id="rent"/>
+                    <label for="rent">Alugar</label>
+                  </div>
+                </div>
+
+                 <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="sell" id="sell"/>
+                    <label for="sell">Vender</label>
+                  </div>
+                </div>
+
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="trade" id="trade"/>
+                    <label for="trade">Trocar</label>
+                  </div>
+                </div>
+
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="repair" id="repair" />
+                    <label for="repair">Reparar</label>
+                  </div>
+                </div>
+
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="donate" id="donate"/>
+                    <label for="donate">Doar</label>
+                  </div>
+                </div>
+
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="laundry" id="laundry"/>
+                    <label for="laundry">Lavar</label>
+                  </div>
+                </div>
+
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="recycle" id="recycle"/>
+                    <label for="recycle">Reciclar</label>
+                  </div>
+                </div>
+
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="upcycle" id="upcycle"/>
+                    <label for="upcycle">Upcycling</label>
+                  </div>
+                </div>
+
+                <div class="funkyradio col-lg-6">
+                  <div class="funkyradio-success">
+                    <input type="checkbox" class="single-checkbox" name="dyeing" id="dyeing"/>
+                    <label for="dyeing">Tingir</label>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+       <div class="text-center"> 
+        <button type="submit" class="btn btn-success mt-5">enviar</button>
+      </div>
+      </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid d-flex justify-content-around align-items-center text-left bg-light-gray p-4">
+        <div class="col-md-4 copyrights text-left">
+          <p class="m-0">Terms & Privacy</p>
+          <p class="m-0">©2019. Infinitu X. All rights reserved. </p>
+          <p class="m-0">13.793.284/0001-62 - contact@weloop.com</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4 class="font-weight-normal">we<strong>loop</strong></h4>
+        </div>
+        <div class="col-md-4 social-media text-right">
+          <!-- Facebook -->
+          <a href="https://facebook.com/weloop.social" target="_blank"><i class="fab fa-facebook-f white-text mr-4"></i></a>
+          <!--Instagram-->
+          <a href="https://www.instagram.com/weloop.social/" target="_blank"><i class="fab fa-instagram white-text"></i></a>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <!--basic scripts initialization-->
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
