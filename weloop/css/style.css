@@ -748,14 +748,14 @@ html.with-panel .framework7-root > .view .tab {
   background-image: url(../images/BANNER-FINO-01.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding:30px 30px 30px 50px;
+  
   margin-top: 10px;
 }
 .banner-brand{
   background-image: url(../images/BANNER-FINO-02.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding:30px 30px 30px 50px;
+
   margin-top: 10px;
 }
 
