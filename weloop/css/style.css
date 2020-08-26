@@ -664,6 +664,7 @@ html.with-panel .framework7-root > .view .tab {
     line-height: 56px;
     box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
     margin-bottom: 50px !important;
+    z-index: 2;
 }
 
 
