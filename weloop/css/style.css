@@ -799,7 +799,7 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 600px) {
 .card-armario{
   background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
- }
+height: 50.80px;}
 }
 
 .card-armario h3{
@@ -967,7 +967,7 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 768px) {
     /* For mobile: */
 .header-title {
-  margin-right: 161px;
+  margin-right: 80px;
 }
 
 /* categories */
@@ -977,7 +977,11 @@ html.with-panel .framework7-root > .view .tab {
     padding: 15px;
     border-radius: 12px;
 }
-
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+.categories .content {
+  padding-left: 5px;padding-right: 5px;
+}
 .categories .content ion-icon {
     font-size: 35px;
     color:#987bd9
