@@ -748,7 +748,7 @@ html.with-panel .framework7-root > .view .tab {
   background-image: url(../images/BANNER-FINO-01.png);
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   margin-top: 10px;
 }
 .banner-brand{
@@ -798,7 +798,7 @@ html.with-panel .framework7-root > .view .tab {
 
 @media only screen and (max-width: 600px) {
 .card-armario{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
  }
 }
 
@@ -814,7 +814,7 @@ html.with-panel .framework7-root > .view .tab {
 }
 @media only screen and (max-width: 600px) {
 .card-blog{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
  }
 }
 
@@ -831,7 +831,7 @@ html.with-panel .framework7-root > .view .tab {
 }
 @media only screen and (max-width: 600px) {
 .card-dicas{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
  }
 }
 
@@ -847,7 +847,7 @@ html.with-panel .framework7-root > .view .tab {
 }
 @media only screen and (max-width: 600px) {
 .card-mais{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
  }
 }
 .card-mais h3{
@@ -967,7 +967,7 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 768px) {
     /* For mobile: */
 .header-title {
-  margin-right: 91px;
+  margin-right: 161px;
 }
 
 /* categories */
