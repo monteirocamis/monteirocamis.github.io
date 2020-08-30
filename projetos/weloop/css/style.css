@@ -345,19 +345,8 @@ input[type="text"] {
     right: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-.button{
-margin-left: 0px;margin-top: 15px;
- }
-}
-@media only screen and (min-width: 600px) {
-.button{
-margin-left: 99px;
- }
-}
-
 .content .button {
-
+  margin-left: 50px;
 }
 select {
     height: 40px !important;
@@ -664,7 +653,6 @@ html.with-panel .framework7-root > .view .tab {
     line-height: 56px;
     box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
     margin-bottom: 50px !important;
-    z-index: 2;
 }
 
 
@@ -749,15 +737,13 @@ html.with-panel .framework7-root > .view .tab {
   background-image: url(../images/BANNER-FINO-01.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-  margin-top: 10px;
+  padding:30px 30px 30px 50px;
 }
 .banner-brand{
   background-image: url(../images/BANNER-FINO-02.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-  margin-top: 10px;
+  padding:30px 30px 30px 50px;
 }
 
 /* item style */
@@ -789,51 +775,35 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 .card-armario{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   text-align: center;
 
-}
-
-@media only screen and (max-width: 600px) {
-.card-armario{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
-height: 50.80px;}
 }
 
 .card-armario h3{
   color: white;
 }
 .card-blog{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-BLOG-WELOOP-resize.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   text-align: center;
-}
-@media only screen and (max-width: 600px) {
-.card-blog{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
- }
 }
 
 .card-blog h3{
   color: white;
 }
 .card-dicas{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-DICAS-WELOOP-resize.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 
 
-}
-@media only screen and (max-width: 600px) {
-.card-dicas{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
- }
 }
 
 .card-dicas h3{
@@ -841,16 +811,12 @@ height: 50.80px;}
 }
 
 .card-mais{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-DICAS-WELOOP-resize.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
-@media only screen and (max-width: 600px) {
-.card-mais{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
- }
-}
+
 .card-mais h3{
   color: white;
 }
@@ -965,12 +931,6 @@ height: 50.80px;}
     font-weight: 800;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile: */
-.header-title {
-  margin-right: 80px;
-}
-
 /* categories */
 .categories .content {
     background: #fff;
@@ -978,11 +938,7 @@ height: 50.80px;}
     padding: 15px;
     border-radius: 12px;
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile: */
-.categories .content {
-  padding-left: 5px;padding-right: 5px;
-}
+
 .categories .content ion-icon {
     font-size: 35px;
     color:#987bd9
@@ -1007,17 +963,7 @@ height: 50.80px;}
     padding-left: 0;
     padding-right: 0;
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile: */
-.lavanderia {
-  font-size: 10px;
-}
 
-@media only screen and (max-width: 768px) {
-    /* For mobile: */
-.upcycling {
-  font-size: 10px;
-}
 /* featured ads */
 .featured .swiper-slide {
     width: 145px;
@@ -1295,8 +1241,7 @@ height: 50.80px;}
 }
 
 .seller-info .content .button {
-    margin-top: 10px;margin-left: 95px;
-
+    margin-top: 15px;
 }
 
 .contact-seller {
