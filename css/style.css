@@ -5376,6 +5376,11 @@ a.close.disabled {
   padding: 0.75rem;
 }
 
+#midias-sociais{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .modal-open {
   overflow: hidden;
 }
