@@ -758,6 +758,7 @@ html.with-panel .framework7-root > .view .tab {
   background-image: url(../images/BANNER-FINO-01.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding:30px 30px 30px 50px;
 
   margin-top: 10px;
 }
@@ -765,6 +766,8 @@ html.with-panel .framework7-root > .view .tab {
   background-image: url(../images/BANNER-FINO-02.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  padding:30px 30px 30px 50px;
 
   margin-top: 10px;
 }
@@ -808,8 +811,10 @@ html.with-panel .framework7-root > .view .tab {
 
 @media only screen and (max-width: 600px) {
 .card-armario{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
-height: 50.80px;}
+
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+ }
+
 }
 
 .card-armario h3{
@@ -824,7 +829,9 @@ height: 50.80px;}
 }
 @media only screen and (max-width: 600px) {
 .card-blog{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
+
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+
  }
 }
 
@@ -841,7 +848,9 @@ height: 50.80px;}
 }
 @media only screen and (max-width: 600px) {
 .card-dicas{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
+
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+
  }
 }
 
@@ -857,7 +866,9 @@ height: 50.80px;}
 }
 @media only screen and (max-width: 600px) {
 .card-mais{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile5.jpg);
+
+  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+
  }
 }
 .card-mais h3{
@@ -977,7 +988,9 @@ height: 50.80px;}
 @media only screen and (max-width: 768px) {
     /* For mobile: */
 .header-title {
-  margin-right: 80px;
+
+  margin-right: 91px;
+
 }
 
 /* categories */
