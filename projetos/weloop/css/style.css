@@ -1020,7 +1020,7 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 @media only screen and (min-width: 523px) {
-    /* logo For tablet: */
+    /* logo For tablet/desktop: */
 .header-title {
   margin-right: 1rem;
 }
@@ -1037,6 +1037,7 @@ html.with-panel .framework7-root > .view .tab {
 
 .header-title img{
   max-width: 180px;
+  max-height: 60.63px;
 }
 
 }
