@@ -178,6 +178,16 @@ ul li {
 }
 
 
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-brand{
+  padding-left: 1px;
+  padding-right: 15px;
+}
+
 
 /* block title */
 .block-title {
@@ -344,20 +354,36 @@ input[type="text"] {
 .input-clear-button {
     right: 10px;
 }
-
-@media only screen and (max-width: 600px) {
+/*btn banners mobile*/
+@media only screen and (max-width: 599px) {
 .button{
-margin-left: 0px;margin-top: 15px;
+  margin-top: 17px;margin-right: 1px;
+
+ }
+}
+/*btn banners tablet e desktop*/
+@media only screen and (min-width: 600px) {
+.banner-service .button{
+margin-right: 2px;margin-left: 15rem;
+margin-top: 10px;
  }
 }
 @media only screen and (min-width: 600px) {
-.button{
-margin-left: 99px;
+.banner-brand .button{
+margin-right: 2px;margin-left: 17rem;
+margin-top: 10px;
+ }
+}
+@media only screen and (max-width: 600px) {
+.banner-brand {
+  margin-left: 15px;
  }
 }
 
-.content .button {
-
+@media only screen and (max-width: 600px) {
+.content-left {
+padding-right: 7px;
+ }
 }
 select {
     height: 40px !important;
@@ -665,7 +691,9 @@ html.with-panel .framework7-root > .view .tab {
     line-height: 56px;
     box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
     margin-bottom: 50px !important;
-    z-index: 2;
+
+    z-index: 4;
+
 }
 
 
@@ -758,7 +786,8 @@ html.with-panel .framework7-root > .view .tab {
   background-image: url(../images/BANNER-FINO-01.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding:30px 30px 30px 50px;
+
+/*padding:30px 30px 30px 50px;*/
 
   margin-top: 10px;
 }
@@ -767,10 +796,13 @@ html.with-panel .framework7-root > .view .tab {
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding:30px 30px 30px 50px;
+/*padding:30px 30px 30px 50px;*/
 
   margin-top: 10px;
+  padding-left: 20px;
 }
+
+
 
 /* item style */
 .title-item {
@@ -798,10 +830,11 @@ html.with-panel .framework7-root > .view .tab {
     padding-top: 100px;
     padding-bottom: 100px;
     border-radius:12px;
+    margin-left: auto;
 }
 
 .card-armario{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-WELOOP-WEB01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -812,7 +845,8 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 600px) {
 .card-armario{
 
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-WELOOP-MOBILE01.jpg);
+
  }
 
 }
@@ -821,7 +855,7 @@ html.with-panel .framework7-root > .view .tab {
   color: white;
 }
 .card-blog{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-WELOOP-WEB03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -830,7 +864,7 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 600px) {
 .card-blog{
 
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-WELOOP-MOBILE03.jpg);
 
  }
 }
@@ -839,7 +873,7 @@ html.with-panel .framework7-root > .view .tab {
   color: white;
 }
 .card-dicas{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-WELOOP-WEB02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -849,7 +883,7 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 600px) {
 .card-dicas{
 
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-WELOOP-MOBILE02.jpg);
 
  }
 }
@@ -859,7 +893,7 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 .card-mais{
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize2.jpg);
+  background-image: url(../images/BANNER-WELOOP-WEB04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -867,7 +901,7 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 600px) {
 .card-mais{
 
-  background-image: url(../images/BANNER-MEU-ARMÁRIO-resize-mobile3.jpg);
+  background-image: url(../images/BANNER-WELOOP-MOBILE04.jpg);
 
  }
 }
@@ -986,14 +1020,22 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile: */
+    /* logo For tablet: */
+.header-title {
+  margin-right: 1rem;
+}
+}
+@media only screen and (max-width: 523px) {
+    /* logo For mobile: */
 .header-title {
 
-  margin-right: 91px;
+  margin: 0 7rem;
+}
 
 }
 
-/* categories */
+/* categories  for desktop/tablet
+@media only screen and (min-width: 768px) {
 .categories .content {
     background: #fff;
     text-align: center;
@@ -1003,8 +1045,14 @@ html.with-panel .framework7-root > .view .tab {
 @media only screen and (max-width: 768px) {
     /* For mobile: */
 .categories .content {
-  padding-left: 5px;padding-right: 5px;
+
+  background: #fff;
+  text-align: center;
+  padding:15px 8px ;
+  border-radius: 12px;
 }
+
+
 .categories .content ion-icon {
     font-size: 35px;
     color:#987bd9
@@ -1024,22 +1072,13 @@ html.with-panel .framework7-root > .view .tab {
 .upcycling{
     padding-left: 0;
     padding-right: 0;
+    font-size: 12px;
 }
 .lavanderia{
-    padding-left: 0;
-    padding-right: 0;
-}
-@media only screen and (max-width: 768px) {
-    /* For mobile: */
-.lavanderia {
-  font-size: 10px;
+    font-size: 11px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile: */
-.upcycling {
-  font-size: 10px;
-}
+
 /* featured ads */
 .featured .swiper-slide {
     width: 145px;
