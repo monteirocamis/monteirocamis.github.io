@@ -1466,9 +1466,8 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 /* image illustration */
-.image-illustration {
-    width: calc(100% - 110px);
-    margin: auto;
+.image-illustration  {
+max-width: 500px;
     margin-bottom: 30px;
 }
 
