@@ -212,10 +212,14 @@ ul li {
     font-size: 14px;
 }
 
-.block-title .right-link ion-icon {
-    font-size: 26px;
-}
 
+.icon{
+max-width: 35px;
+margin: 0 auto;
+}
+.reparo{
+  padding-top: 4px;
+}
 .block-title .block-subtitle {
     font-weight: 400;
     color: #888;
@@ -642,17 +646,19 @@ html.with-panel .framework7-root > .view .tab {
 /* toolbar bottom */
 .toolbar {
     height: 52px;
+    z-index: 5;
 }
 
 .tabbar-labels .tab-link {
     padding-top: 6px !important;
     padding-bottom: 6px !important;
+      z-index: 5;
 }
 
 
 .ios .toolbar.toolbar-bottom .toolbar-inner .tab-link.tab-link-active {
     color: #698aff;
-
+  z-index: 5;
 }
 
 .toolbar-bottom::before {
@@ -690,7 +696,7 @@ html.with-panel .framework7-root > .view .tab {
     line-height: 56px;
     box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
     margin-bottom: 50px !important;
-    z-index: 3;
+    z-index: 5;
 }
 
 
