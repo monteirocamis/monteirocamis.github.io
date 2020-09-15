@@ -533,7 +533,7 @@ img {
     box-sizing: border-box;
     height: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 99999999;
     padding-bottom: 50px;
     overflow-x: hidden;
 }
@@ -545,7 +545,7 @@ img {
     box-sizing: border-box;
     height: 100%;
     position: relative;
-    z-index: 1;
+        z-index: 99999999;
     padding-bottom: 50px;
     overflow-x: hidden;
 }
@@ -557,7 +557,7 @@ img {
     box-sizing: border-box;
     height: 100%;
     position: relative;
-    z-index: 1;
+      z-index: 99999999;
     padding-bottom: 50px;
     overflow-x: hidden;
 }
@@ -648,19 +648,19 @@ html.with-panel .framework7-root > .view .tab {
 /* toolbar bottom */
 .toolbar {
     height: 52px;
-    z-index: 5;
+      z-index: 99999999;
 }
 
 .tabbar-labels .tab-link {
     padding-top: 6px !important;
     padding-bottom: 6px !important;
-      z-index: 5;
+          z-index: 99999999;
 }
 
 
 .ios .toolbar.toolbar-bottom .toolbar-inner .tab-link.tab-link-active {
     color: #698aff;
-  z-index: 5;
+      z-index: 99999999;
 }
 
 .toolbar-bottom::before {
@@ -699,7 +699,7 @@ html.with-panel .framework7-root > .view .tab {
     box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
     margin-bottom: 50px !important;
 
-    z-index: 5;
+      z-index: 99999999;
 
 }
 
