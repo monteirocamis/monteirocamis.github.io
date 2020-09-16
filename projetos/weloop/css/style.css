@@ -701,13 +701,10 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 .image-illustration{
-  max-width: 300px;
-  margin: 0 auto;
+  margin-bottom: 40px;
 }
-.image-illustration{
-  max-width: 300px;
-  margin: 0 auto;
-}
+
+
 /* navbar & subnavbar */
 .navbar {
     height: 52px;
