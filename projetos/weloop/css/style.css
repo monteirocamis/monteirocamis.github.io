@@ -700,11 +700,11 @@ html.with-panel .framework7-root > .view .tab {
     z-index: 99999999;
 }
 
-.sign-in{
+.sign-in img{
   max-width: 300px;
   margin: 0 auto;
 }
-.sign-up{
+.sign-up img{
   max-width: 300px;
   margin: 0 auto;
 }
