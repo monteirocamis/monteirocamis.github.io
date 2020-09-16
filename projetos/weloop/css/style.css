@@ -789,6 +789,7 @@ html.with-panel .framework7-root > .view .tab {
   background-size: cover;
 /*padding:30px 30px 30px 50px;*/
   margin-top: 10px;
+  padding-right: 47px;
 }
 .banner-brand{
   background-image: url(../images/BANNER-FINO-02.png);
