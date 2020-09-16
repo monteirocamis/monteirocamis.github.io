@@ -4,9 +4,15 @@ var routes = [
     path: '/',
     Url: './index.html',
   },
+
   {
     path: '/formServico/',
     Url: './formServico.html',
+  },
+
+  {
+    path: '/formMarca/',
+    Url: './formMarca.html',
   },
 
   {
