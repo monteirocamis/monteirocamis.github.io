@@ -704,6 +704,7 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 .image-illustration{
+  max-width: 300px;
   margin-bottom: 40px;
 }
 
@@ -801,6 +802,7 @@ html.with-panel .framework7-root > .view .tab {
 /*padding:30px 30px 30px 50px;*/
 
   margin-top: 10px;
+  padding-right: 47px;
 }
 .banner-brand{
   background-image: url(../images/BANNER-FINO-02.png);
