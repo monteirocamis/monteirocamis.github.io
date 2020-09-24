@@ -668,6 +668,7 @@ html.with-panel .framework7-root > .view .tab {
 
 .toolbar-bottom ion-icon {
     font-size: 22px;
+    margin-top: -2px;margin-left: -1px;
 }
 
 .toolbar-bottom .tabbar-label {
@@ -675,29 +676,35 @@ html.with-panel .framework7-root > .view .tab {
 }
 .toolbar-bottom .tabbar-label-2 {
     font-size: 11px;
-    padding-top:10px;
+    color: #698aff;
+    display: block;
+font-weight: var(--f7-tabbar-label-font-weight);
+margin-left: -40px;
 }
 @media only screen and (max-width: 768px) {
     /* For mobile : */
     .toolbar-bottom .tabbar-label-2 {
     font-size: 11px;
-    padding-top:26px;
     }
 }
 
+.icon-add{
+  margin-left: -2px;
+}
 .adding-ads {
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    position: fixed;
-    top: -30px;
-    background: #698aff;
-    color: #fff;
-    border-radius: 50%;
-    line-height: 56px;
-    box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
-    margin-bottom: 50px !important;
-    z-index: 99999999;
+  height: 24px;
+  width: 30px;
+text-align: center;
+position: fixed;
+top: 4px;
+background: #698aff;
+color: #fff;
+border-radius: 50%;
+line-height: -56px;
+box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
+margin-bottom: 50px !important;
+z-index: 99999999;
+padding-top: 5px;
 }
 
 .image-illustration{
@@ -798,6 +805,7 @@ html.with-panel .framework7-root > .view .tab {
 /*padding:30px 30px 30px 50px;*/
   margin-top: 10px;
   padding-left: 20px;
+  padding-bottom: 32px;
 }
 
 
