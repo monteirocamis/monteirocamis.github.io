@@ -443,6 +443,7 @@ img {
     display: block;
 }
 
+
 .full-width {
     width: 100% !important;
 }
@@ -692,6 +693,7 @@ margin-left: -40px;
   margin-left: -2px;
 }
 .adding-ads {
+
   height: 24px;
   width: 30px;
 text-align: center;
@@ -705,6 +707,7 @@ box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
 margin-bottom: 50px !important;
 z-index: 99999999;
 padding-top: 5px;
+
 }
 
 .image-illustration{
@@ -769,6 +772,14 @@ padding-top: 5px;
     margin-right: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile : */
+    .header-title {
+      margin-right: 98px;
+    display: flex;
+    }
+}
+
 .panel-header .content .title-name {
     overflow: hidden;
 }
@@ -794,7 +805,9 @@ padding-top: 5px;
   background-image: url(../images/BANNER-FINO-01.png);
   background-repeat: no-repeat;
   background-size: cover;
+
 /*padding:30px 30px 30px 50px;*/
+
   margin-top: 10px;
   padding-right: 47px;
 }
@@ -802,7 +815,9 @@ padding-top: 5px;
   background-image: url(../images/BANNER-FINO-02.png);
   background-repeat: no-repeat;
   background-size: cover;
+
 /*padding:30px 30px 30px 50px;*/
+
   margin-top: 10px;
   padding-left: 20px;
   padding-bottom: 32px;
@@ -850,8 +865,11 @@ padding-top: 5px;
 
 @media only screen and (max-width: 600px) {
 .card-armario{
+
   background-image: url(../images/BANNER-WELOOP-MOBILE01.jpg);
+
  }
+
 }
 
 .card-armario h3{
@@ -866,7 +884,9 @@ padding-top: 5px;
 }
 @media only screen and (max-width: 600px) {
 .card-blog{
+
   background-image: url(../images/BANNER-WELOOP-MOBILE03.jpg);
+
  }
 }
 
@@ -883,7 +903,9 @@ padding-top: 5px;
 }
 @media only screen and (max-width: 600px) {
 .card-dicas{
+
   background-image: url(../images/BANNER-WELOOP-MOBILE02.jpg);
+
  }
 }
 
@@ -899,7 +921,9 @@ padding-top: 5px;
 }
 @media only screen and (max-width: 600px) {
 .card-mais{
+
   background-image: url(../images/BANNER-WELOOP-MOBILE04.jpg);
+
  }
 }
 .card-mais h3{
@@ -1031,13 +1055,16 @@ padding-top: 5px;
 @media only screen and (max-width: 523px) {
     /* logo For mobile: */
 .header-title {
+
   margin: 0 7rem;
 }
+
 .header-title img{
   max-width: 180px;
   max-height: 60.63px;
     margin: 2rem 0;
 }
+
 }
 
 /* categories  for desktop/tablet
@@ -1051,11 +1078,13 @@ padding-top: 5px;
 @media only screen and (max-width: 768px) {
     /* For mobile: */
 .categories .content {
+
   background: #fff;
   text-align: center;
   padding:15px 8px ;
   border-radius: 12px;
 }
+
 
 .categories .content ion-icon {
     font-size: 35px;
