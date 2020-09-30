@@ -366,11 +366,16 @@ input[type="text"] {
 
  }
 }
-/*btn banners tablet e desktop*/
+/*btn banner-service tablet e desktop*/
 @media only screen and (min-width: 600px) {
 .banner-service .button{
 margin-right: 2px;margin-left: 15rem;
 margin-top: 10px;
+ }
+}
+@media only screen and (max-width: 600px) {
+.banner-service .button{
+margin-right: -36px;
  }
 }
 @media only screen and (min-width: 600px) {
@@ -384,6 +389,20 @@ margin-top: 10px;
   margin-left: 15px;
  }
 }
+/*btn banner-survey tablet e desktop*/
+@media only screen and (max-width: 600px) {
+.banner-survey .button{
+margin-right: 2px;margin-left: 40px;
+margin-top: 10px;
+ }
+}
+@media only screen and (min-width: 600px) {
+.banner-survey .button{
+margin-right: 2px;margin-left: 74rem;
+margin-top: 10px;
+ }
+}
+
 
 @media only screen and (max-width: 600px) {
 .content-left {
@@ -820,9 +839,18 @@ padding-top: 5px;
 
   margin-top: 10px;
   padding-left: 20px;
-  padding-bottom: 32px;
 }
-
+.banner-survey{
+  background-image: url(../images/BANNER-FINO-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*padding:30px 30px 30px 50px;*/
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.card-content h6{
+  padding-top: 41px;
+}
 
 
 /* item style */
@@ -838,6 +866,19 @@ padding-top: 5px;
 .title-item.title-item-large {
     font-size: 20px;
     font-weight: 600;
+}
+
+/* title-item2 mobile */
+@media only screen and (max-width: 600px) {
+.title-item2 {
+    font-weight: 500;
+    color: #383e50;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
 }
 
 .content-item {
