@@ -6,6 +6,16 @@ var routes = [
   },
 
   {
+    path: '/formServico/',
+    Url: './formServico.html',
+  },
+
+  {
+    path: '/formMarca/',
+    Url: './formMarca.html',
+  },
+
+  {
     path: '/ads/',
     url: './ads.html',
   },
