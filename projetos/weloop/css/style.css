@@ -366,16 +366,11 @@ input[type="text"] {
 
  }
 }
-/*btn banner-service tablet e desktop*/
+/*btn banners tablet e desktop*/
 @media only screen and (min-width: 600px) {
 .banner-service .button{
 margin-right: 2px;margin-left: 15rem;
 margin-top: 10px;
- }
-}
-@media only screen and (max-width: 600px) {
-.banner-service .button{
-margin-right: -36px;
  }
 }
 @media only screen and (min-width: 600px) {
@@ -389,20 +384,6 @@ margin-top: 10px;
   margin-left: 15px;
  }
 }
-/*btn banner-survey tablet e desktop*/
-@media only screen and (max-width: 600px) {
-.banner-survey .button{
-margin-right: 2px;margin-left: 40px;
-margin-top: 10px;
- }
-}
-@media only screen and (min-width: 600px) {
-.banner-survey .button{
-margin-right: 2px;margin-left: 74rem;
-margin-top: 10px;
- }
-}
-
 
 @media only screen and (max-width: 600px) {
 .content-left {
@@ -461,7 +442,6 @@ form.list .item-input:last-child .item-input-wrap {
 img {
     display: block;
 }
-
 
 .full-width {
     width: 100% !important;
@@ -688,7 +668,6 @@ html.with-panel .framework7-root > .view .tab {
 
 .toolbar-bottom ion-icon {
     font-size: 22px;
-    margin-top: -2px;margin-left: -1px;
 }
 
 .toolbar-bottom .tabbar-label {
@@ -696,37 +675,29 @@ html.with-panel .framework7-root > .view .tab {
 }
 .toolbar-bottom .tabbar-label-2 {
     font-size: 11px;
-    color: #698aff;
-    display: block;
-font-weight: var(--f7-tabbar-label-font-weight);
-margin-left: -40px;
+    padding-top:10px;
 }
 @media only screen and (max-width: 768px) {
     /* For mobile : */
     .toolbar-bottom .tabbar-label-2 {
     font-size: 11px;
+    padding-top:26px;
     }
 }
 
-.icon-add{
-  margin-left: -2px;
-}
 .adding-ads {
-
-  height: 24px;
-  width: 30px;
-text-align: center;
-position: fixed;
-top: 4px;
-background: #698aff;
-color: #fff;
-border-radius: 50%;
-line-height: -56px;
-box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
-margin-bottom: 50px !important;
-z-index: 99999999;
-padding-top: 5px;
-
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    top: -30px;
+    background: #698aff;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 56px;
+    box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
+    margin-bottom: 50px !important;
+    z-index: 99999999;
 }
 
 .image-illustration{
@@ -791,14 +762,6 @@ padding-top: 5px;
     margin-right: 15px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile : */
-    .header-title {
-      margin-right: 98px;
-    display: flex;
-    }
-}
-
 .panel-header .content .title-name {
     overflow: hidden;
 }
@@ -824,9 +787,7 @@ padding-top: 5px;
   background-image: url(../images/BANNER-FINO-01.png);
   background-repeat: no-repeat;
   background-size: cover;
-
 /*padding:30px 30px 30px 50px;*/
-
   margin-top: 10px;
   padding-right: 47px;
 }
@@ -834,23 +795,11 @@ padding-top: 5px;
   background-image: url(../images/BANNER-FINO-02.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-/*padding:30px 30px 30px 50px;*/
-
-  margin-top: 10px;
-  padding-left: 20px;
-}
-.banner-survey{
-  background-image: url(../images/BANNER-FINO-02.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 /*padding:30px 30px 30px 50px;*/
   margin-top: 10px;
   padding-left: 20px;
 }
-.card-content h6{
-  padding-top: 41px;
-}
+
 
 
 /* item style */
@@ -866,19 +815,6 @@ padding-top: 5px;
 .title-item.title-item-large {
     font-size: 20px;
     font-weight: 600;
-}
-
-/* title-item2 mobile */
-@media only screen and (max-width: 600px) {
-.title-item2 {
-    font-weight: 500;
-    color: #383e50;
-    margin-bottom: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 12px;
-}
 }
 
 .content-item {
@@ -906,11 +842,8 @@ padding-top: 5px;
 
 @media only screen and (max-width: 600px) {
 .card-armario{
-
   background-image: url(../images/BANNER-WELOOP-MOBILE01.jpg);
-
  }
-
 }
 
 .card-armario h3{
@@ -925,9 +858,7 @@ padding-top: 5px;
 }
 @media only screen and (max-width: 600px) {
 .card-blog{
-
   background-image: url(../images/BANNER-WELOOP-MOBILE03.jpg);
-
  }
 }
 
@@ -944,9 +875,7 @@ padding-top: 5px;
 }
 @media only screen and (max-width: 600px) {
 .card-dicas{
-
   background-image: url(../images/BANNER-WELOOP-MOBILE02.jpg);
-
  }
 }
 
@@ -962,9 +891,7 @@ padding-top: 5px;
 }
 @media only screen and (max-width: 600px) {
 .card-mais{
-
   background-image: url(../images/BANNER-WELOOP-MOBILE04.jpg);
-
  }
 }
 .card-mais h3{
@@ -1083,31 +1010,24 @@ padding-top: 5px;
 
 @media only screen and (min-width: 523px) {
     /* logo For tablet/desktop: */
-
 .header-title {
   margin-right: 1rem;
 }
 .header-title img{
   max-width: 180px;
   max-height: 60.63px;
-  margin: 2rem 0;
-    margin: 2rem 0;
 }
 }
 @media only screen and (max-width: 523px) {
     /* logo For mobile: */
 .header-title {
   margin: 0 7rem;
-
 }
 .header-title img{
   max-width: 180px;
   max-height: 60.63px;
-
-    margin: 2rem 0;
 }
 }
-
 
 /* categories  for desktop/tablet
 @media only screen and (min-width: 768px) {
@@ -1120,9 +1040,11 @@ padding-top: 5px;
 @media only screen and (max-width: 768px) {
     /* For mobile: */
 .categories .content {
-
-
-
+  background: #fff;
+  text-align: center;
+  padding:15px 8px ;
+  border-radius: 12px;
+}
 
 .categories .content ion-icon {
     font-size: 35px;

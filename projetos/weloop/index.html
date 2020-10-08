@@ -31,14 +31,18 @@
 						</a>
 
 
-
-
-
-
-						<a href="#formContato" class="tab-link addding-ads">
+						<a href="#tab-add" class="tab-link addding-ads">
 							<span class="adding-ads">
-						<ion-icon class="icon-add" name="add-outline"></ion-icon>
+								<ion-icon name="add-outline"></ion-icon>
+							</span>
 							<span class="tabbar-label-2">Adicionar produto</span>
+						</a>
+
+
+
+						<a href="#tab-profile" class="tab-link">
+							<ion-icon name="person-outline"></ion-icon>
+							<span class="tabbar-label">Perfil</span>
 						</a>
 					</div>
 				</div>
@@ -48,11 +52,85 @@
 						<!-- ===== TAB HOME ===== -->
 
 						<!-- navbar -->
-
+						<div class="navbar navbar-transparent">
+							<div class="navbar-bg"></div>
+							<div class="navbar-inner sliding">
+								<div class="left">
+									<a href="#" class="link panel-open" data-panel=".sidebar-left">
+										<ion-icon name="menu-outline"></ion-icon>
+									</a>
+								</div>
+							</div>
+						</div>
 						<!-- end navbar -->
 
 						<!-- sidebar / panel -->
+						<div class="panel-backdrop"></div>
+						<div class="panel panel-left sidebar-left panel-cover panel-init">
 
+							<!-- separator -->
+							<div class="separator-large"></div>
+							<!-- end separator -->
+
+							<div class="panel-header">
+								<div class="container">
+									<div class="content">
+										<img src="images/avatar6.jpg" alt="">
+										<div class="title-name">
+											<h5>Philips Ramsey</h5>
+											<p class="text-small">Member Since 2020</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="list">
+								<ul>
+									<li>
+										<a href="/my-ads/" data-transition="f7-dive" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="duplicate-outline" class="color-blue"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Meus produtos</div>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="/settings/" data-transition="f7-dive" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="settings-outline" class="color-green"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Configurações</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/pages/" data-transition="f7-dive" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="documents-outline" class="color-blue"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Pages</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="log-out-outline" class="color-red"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Sair</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
 						<!-- end sidebar / panel -->
 
 						<!-- header page
@@ -86,7 +164,7 @@
 										<a href="/category-details/" data-transition="f7-dive">
 											<div class="content">
 											<img src="images/venda.png" class="icon"></img>
-												<h6 class="second-title">Vender</h6>
+												<h6 class="second-title">Venda</h6>
 											</div>
 										</a>
 									</div>
@@ -94,7 +172,7 @@
 										<a href="/category-details/" data-transition="f7-dive">
 											<div class="content">
 							<img src="images/aluguel.png" class="icon"></img>
-												<h6 class="second-title">Alugar</h6>
+												<h6 class="second-title">Aluguel</h6>
 											</div>
 										</a>
 									</div>
@@ -102,12 +180,12 @@
 										<a href="/category-details/" data-transition="f7-dive">
 											<div class="content">
 											<img src="images/troca.png" class="icon"></img>
-												<h6 class="second-title">Trocar</h6>
+												<h6 class="second-title">Troca</h6>
 											</div>
 										</a>
 									</div>
 									<div class="col-25">
-							<a href="/category-details/" data-transition="f7-dive">
+										<a href="/category-details/" data-transition="f7-dive">
 											<div class="content">
 										<img src="images/marcas.png" class="icon"></img>
 												<h6 class="second-title">Marcas</h6>
@@ -169,11 +247,51 @@
 <!-- end separator -->
 
 
+	<!--  banners  tipo rappi
+<div class="row">
+	<div class="col-100 medium-50 ">
+		<div class="card radius-default">
+			<div class="card-content ">
+
+				<div class="row no-gap ">
+					<div class="col-33 "><img class="radius-left-only" src="images/logo200x300.png" alt=""> </div>
+					<div class="col-66"><div class="card-content card-content-padding">
+						<p class="date">Posted on January 21, 2015</p>
+						<p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	 	 </div>
+	</div>
+
+	  <div class="col-100 medium-50">
+		<div class="card radius-default">
+			<div class="card-content ">
+
+				<div class="row no-gap ">
+					<div class="col-33 "><img class="radius-left-only" src="images/logo200x300.png" alt=""> </div>
+					<div class="col-66"><div class="card-content card-content-padding">
+						<h6 class="date">Posted on January 21, 2015</h6>
+						<p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	 	 </div>
+	 	 </div>
+</div>
+
+       <!--  end  banners  tipo rappi -->
+
+
+
+
 <!--   banners  parceiro -->
 	 <div class="row">
 		<div class="col-100 medium-50">
 			<div class="container">
-				<a class="link external" href="">
+				<a class="link" href="formServico">
 					<div class="content-box banner-service">
 						<div class="content color-white content-left">
 							<h5 class="title-item color-white">Cadastre um serviço</h5>
@@ -193,7 +311,7 @@
 
 		<div class="col-100 medium-50">
 			<div class="container-brand">
-					<a class="link external" href="https://airtable.com/shrp4Mg60naE3Di8A" >
+					<a href="/formMarca/">
 					<div class="content-box banner-brand">
 						<div class="content color-white content-left">
 							<h5 class="title-item color-white">Cadastre uma marca sustentável</h5>
@@ -215,58 +333,31 @@
  <!-- end banners parceiro -->
 
  <!--end banners -->
- <!--  banners  tipo ifood
-<div class="row">
- <div class="col-100 medium-50 ">
-	 <div class="card radius-default">
-		 <div class="card-content ">
 
-			 <div class="row no-gap ">
-				 <div class="col-40 "><img class="radius-left-only" src="images/logo200x300.png" alt=""> </div>
-				 <div class="col-60"><div class="card-content card-content-padding">
-					 <h6 class="">Marca sustentável</h6>
-					 <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
-					 </div>
-				 </div>
-				 </div>
-			 </div>
-		</div>
- </div>
-
-	 <div class="col-100 medium-50">
-	 <div class="card radius-default">
-		 <div class="card-content ">
-
-			 <div class="row no-gap ">
-				 <div class="col-40 "><img class="radius-left-only" src="images/logo200x300.png" alt=""> </div>
-				 <div class="col-60"><div class="card-content card-content-padding">
-					 <h6 class="">Marca sustentável</h6>
-					 <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
-					 </div>
-				 </div>
-				 </div>
-			 </div>
-		</div>
-		</div>
-</div>
-
-			<!--  end  banners  tipo ifood -->
   <!-- cards infos -->
 
   <div class="container">
 	<div class="row ">
-
-		<div class="col-100 medium-50">
+		<div class="col-50 medium-25">
+			<div class="card card-item card-armario">
+				<h3>Meu Armário</h3>
+			  </div>
+		</div>
+		<div class="col-50 medium-25">
 			<div class="card card-item card-dicas">
 				<h3>Dicas Weloop</h3>
 			  </div>
 		</div>
-		<div class="col-100 medium-50">
+		<div class="col-50 medium-25">
 			<div class="card card-item card-blog">
 				<h3>Blog Weloop</h3>
 			  </div>
 		</div>
-
+		<div class="col-50 medium-25">
+			<div class="card card-item card-mais">
+				<h3>Em Breve!</h3>
+			  </div>
+		</div>
 
 	</div>
 
@@ -278,7 +369,7 @@
 						<!-- latest ads -->
 						<div class="latest-ads">
 							<div class="block-title">
-								<h3>Últimos produtos <!--<a href="/ads/" data-transition="f7-dive" class="right-link">Ver todos</a> --></h3>
+								<h3>Últimos produtos <a href="/ads/" data-transition="f7-dive" class="right-link">Ver todos</a></h3>
 							</div>
 
 
@@ -292,8 +383,8 @@
 											<a href="/ads-details/">
 												<img class="full-width radius-default" src="images/oz-seyrek-bLZQ46t06Vs-unsplash.jpg" alt="">
 												<div class="text-desc">
-													<p class="title-item2">Produto demonstrativo</p>
-													<p class="price-item">R$ 00,00</p>
+													<p class="title-item">Moletom vintage</p>
+													<p class="price-item">R$ 80,00</p>
 													<p class="location-item"><ion-icon name="map-outline"></ion-icon>RIO DE JANEIRO, RJ</p>
 												</div>
 											</a>
@@ -304,7 +395,7 @@
 											<a href="/ads-details/">
 												<img class="full-width radius-default" src="images/sorin-sirbu-_3iI0mADqho-unsplash.jpg" alt="">
 												<div class="text-desc">
-													<p class="title-item2">Produto demonstrativo</p>
+													<p class="title-item">Jaqueta jeans </p>
 													<p class="price-item">R$ 120,00/dia</p>
 													<p class="location-item"><ion-icon name="map-outline"></ion-icon>SÃO PAULO, SP</p>
 												</div>
@@ -316,7 +407,7 @@
 											<a href="/ads-details/">
 												<img class="full-width radius-default" src="images/kate-skumen-PJRabkuH3_Q-unsplash.jpg" alt="">
 												<div class="text-desc">
-													<p class="title-item2">Produto demonstrativo</p>
+													<p class="title-item">Vestido plush</p>
 													<p class="price-item">R$ 80,00/dia</p>
 													<p class="location-item"><ion-icon name="map-outline"></ion-icon>SÃO PAULO, SP</p>
 												</div>
@@ -328,7 +419,7 @@
 											<a href="/ads-details/">
 												<img class="full-width radius-default" src="images/ian-dooley-TT-ROxWj9nA-unsplash.jpg" alt="">
 												<div class="text-desc">
-												<p class="title-item2">Produto demonstrativo</p>
+													<p class="title-item">Cropped customizado</p>
 													<p class="price-item">R$ 25,00</p>
 													<p class="location-item"><ion-icon name="map-outline"></ion-icon>SÃO PAULO, SP</p>
 												</div>
@@ -347,26 +438,7 @@
 						<div class="separator-large"></div>
 						<!-- end separator -->
 
-						<div class="col-100 medium-50">
-							<div class="container-brand">
-									<a href="https://airtable.com/shrENFh5WiDQJ81vh">
-									<div class="content-box banner-survey">
-										<div class="content color-white content-left">
-											<h5 class="title-item color-white">QUEREMOS A SUA OPINIÃO</h5>
-											<p class="text-small">Lançamos a Weloop em seu formato simplificado.  </p>
 
-												<p class="text-small">Nos ajude a entender quais os próximos passos e quais funcionalidades devemos disponibilizar. 	</p>
-
-										</div>
-										<div class="content content-right">
-											<div class="button button-icon-large">
-												<ion-icon name="arrow-forward-outline" role="img" class="md hydrated" aria-label="arrow forward outline"></ion-icon>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
 						<!-- separator -->
 						<div class="separator-large"></div>
 						<!-- end separator -->
