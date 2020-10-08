@@ -359,6 +359,14 @@ input[type="text"] {
 .input-clear-button {
     right: 10px;
 }
+/*cards-brands desktop*/
+/*cards-brands mobile*/
+@media only screen and (max-width: 599px) {
+.cards-brand img{
+  width: auto;
+  height: 7rem;
+ }
+}
 /*btn banners mobile*/
 @media only screen and (max-width: 599px) {
 .button{
@@ -366,11 +374,16 @@ input[type="text"] {
 
  }
 }
-/*btn banners tablet e desktop*/
+/*btn banner-service tablet e desktop*/
 @media only screen and (min-width: 600px) {
 .banner-service .button{
 margin-right: 2px;margin-left: 15rem;
 margin-top: 10px;
+ }
+}
+@media only screen and (max-width: 600px) {
+.banner-service .button{
+margin-right: -36px;
  }
 }
 @media only screen and (min-width: 600px) {
@@ -384,6 +397,20 @@ margin-top: 10px;
   margin-left: 15px;
  }
 }
+/*btn banner-survey tablet e desktop*/
+@media only screen and (max-width: 600px) {
+.banner-survey .button{
+margin-right: 2px;margin-left: 74rem;
+margin-top: 22px;
+ }
+}
+@media only screen and (min-width: 600px) {
+.banner-survey .button{
+margin-right: 2px;margin-left: 53rem;
+margin-top: 10px;
+ }
+}
+
 
 @media only screen and (max-width: 600px) {
 .content-left {
@@ -668,6 +695,7 @@ html.with-panel .framework7-root > .view .tab {
 
 .toolbar-bottom ion-icon {
     font-size: 22px;
+    margin-top: -2px;margin-left: -1px;
 }
 
 .toolbar-bottom .tabbar-label {
@@ -675,29 +703,35 @@ html.with-panel .framework7-root > .view .tab {
 }
 .toolbar-bottom .tabbar-label-2 {
     font-size: 11px;
-    padding-top:10px;
+    color: #698aff;
+    display: block;
+font-weight: var(--f7-tabbar-label-font-weight);
+margin-left: -40px;
 }
 @media only screen and (max-width: 768px) {
     /* For mobile : */
     .toolbar-bottom .tabbar-label-2 {
     font-size: 11px;
-    padding-top:26px;
     }
 }
 
+.icon-add{
+  margin-left: -2px;
+}
 .adding-ads {
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    position: fixed;
-    top: -30px;
-    background: #698aff;
-    color: #fff;
-    border-radius: 50%;
-    line-height: 56px;
-    box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
-    margin-bottom: 50px !important;
-    z-index: 99999999;
+  height: 24px;
+  width: 30px;
+text-align: center;
+position: fixed;
+top: 4px;
+background: #698aff;
+color: #fff;
+border-radius: 50%;
+line-height: -56px;
+box-shadow: 0 5px 9px -4px rgba(0, 0, 0, 0.46);
+margin-bottom: 50px !important;
+z-index: 99999999;
+padding-top: 5px;
 }
 
 .image-illustration{
@@ -717,15 +751,21 @@ html.with-panel .framework7-root > .view .tab {
 }
 
 .navbar .link {
-    color: #383e50;
+  /* color: #383e50;*/
+  color: white;
 }
 
 .navbar .link ion-icon {
     font-size: 24px;
+    opacity: 0;
+}
+.navbar-transparent:not(.navbar-large):not(.navbar-transparent-visible):not(.with-searchbar-expandable-enabled) .navbar-bg, .navbar-transparent:not(.navbar-large):not(.navbar-transparent-visible):not(.with-searchbar-expandable-enabled) .title{
+  opacity: 1;
 }
 
 .navbar .icon-back::after {
     font-size: 18px;
+    color:
 }
 
 .navbar-bg {
@@ -799,7 +839,17 @@ html.with-panel .framework7-root > .view .tab {
   margin-top: 10px;
   padding-left: 20px;
 }
-
+.banner-survey{
+  background-image: url(../images/BANNER-FINO-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*padding:30px 30px 30px 50px;*/
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.card-content h6{
+  padding-top: 41px;
+}
 
 
 /* item style */
@@ -815,6 +865,19 @@ html.with-panel .framework7-root > .view .tab {
 .title-item.title-item-large {
     font-size: 20px;
     font-weight: 600;
+}
+
+/* title-item2 mobile */
+@media only screen and (max-width: 600px) {
+.title-item2 {
+    font-weight: 500;
+    color: #383e50;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
 }
 
 .content-item {
@@ -1016,6 +1079,8 @@ html.with-panel .framework7-root > .view .tab {
 .header-title img{
   max-width: 180px;
   max-height: 60.63px;
+  margin: 2rem 0;
+    margin: 2rem 0;
 }
 }
 @media only screen and (max-width: 523px) {
@@ -1026,6 +1091,7 @@ html.with-panel .framework7-root > .view .tab {
 .header-title img{
   max-width: 180px;
   max-height: 60.63px;
+    margin: 2rem 0;
 }
 }
 
@@ -1745,6 +1811,7 @@ max-width: 500px;
 .bg-blue {
     background: #4da6d2 !important;
 }
+
 
 .color-blue {
     color: #4da6d2 !important;

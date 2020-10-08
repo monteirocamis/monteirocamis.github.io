@@ -7,12 +7,12 @@ var routes = [
 
   {
     path: '/formServico/',
-    Url: './formServico.html',
+    Url: './formservico.html',
   },
 
   {
     path: '/formMarca/',
-    Url: './formMarca.html',
+    Url: './formmarca.html',
   },
 
   {
@@ -63,6 +63,23 @@ var routes = [
   {
     path: '/category-details/',
     url: './category-details.html',
+  },
+
+  {
+    path: '/brands-details/',
+    url: './brands-details.html',
+  },
+  {
+    path: '/sale-details/',
+    url: './sale-details.html',
+  },
+  {
+    path: '/rent-details/',
+    url: './rent-details.html',
+  },
+  {
+    path: '/exchange-details/',
+    url: './exchange-details.html',
   },
 
   {
