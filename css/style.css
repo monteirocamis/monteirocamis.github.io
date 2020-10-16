@@ -1,15 +1,6 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Creative v6.0.3 (https://startbootstrap.com/themes/creative)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -155,6 +146,8 @@ sub {
 sup {
   top: -0.5em;
 }
+
+
 
 a {
   color: #800080;
@@ -7379,6 +7372,10 @@ button.bg-dark:focus {
   bottom: 0;
   left: 0;
   z-index: 1030;
+}
+
+.separator{
+  margin: 50px;
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
