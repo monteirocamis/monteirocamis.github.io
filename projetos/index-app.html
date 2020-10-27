@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+
+	<link rel="icon" href="weloop_app_V1/images/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Weloop</title>
+	<link rel="stylesheet" href="weloop_app_V1/css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="weloop_app_V1/css/style.css">
+
+</head>
+<body>
+
+	<div id="app">
+
+		<div class="view view-main view-init ios-edges" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom elevation-6 bg-white">
+					<div class="toolbar-inner">
+						<a href="#tab-home" class="tab-link tab-link-active">
+							<ion-icon name="home-outline"></ion-icon>
+							<span class="tabbar-label">Home</span>
+						</a>
+
+
+						<a href="#tab-add" class="tab-link addding-ads">
+							<span class="adding-ads">
+								<ion-icon name="add-outline"></ion-icon>
+							</span>
+							<span class="tabbar-label-2">Adicionar produto</span>
+						</a>
+
+
+
+						<a href="#tab-profile" class="tab-link">
+							<ion-icon name="person-outline"></ion-icon>
+							<span class="tabbar-label">Perfil</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="tabs">
+					<div id="tab-home" class="tab tab-home tab-active">
+						<!-- ===== TAB HOME ===== -->
+
+						<!-- navbar -->
+						<div class="navbar navbar-transparent">
+							<div class="navbar-bg"></div>
+							<div class="navbar-inner sliding">
+								<div class="left">
+									<a href="#" class="link panel-open" data-panel=".sidebar-left">
+										<ion-icon name="menu-outline"></ion-icon>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end navbar -->
+
+						<!-- sidebar / panel -->
+						<div class="panel-backdrop"></div>
+						<div class="panel panel-left sidebar-left panel-cover panel-init">
+
+							<!-- separator -->
+							<div class="separator-large"></div>
+							<!-- end separator -->
+
+							<div class="panel-header">
+								<div class="container">
+									<div class="content">
+										<img src="images/avatar6.jpg" alt="">
+										<div class="title-name">
+											<h5>Philips Ramsey</h5>
+											<p class="text-small">Member Since 2020</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="list">
+								<ul>
+									<li>
+										<a href="/my-ads/" data-transition="f7-dive" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="duplicate-outline" class="color-blue"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Meus produtos</div>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="/settings/" data-transition="f7-dive" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="settings-outline" class="color-green"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Configurações</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/pages/" data-transition="f7-dive" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="documents-outline" class="color-blue"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Pages</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="" class="item-link item-content panel-close">
+											<div class="item-media">
+												<ion-icon name="log-out-outline" class="color-red"></ion-icon>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Sair</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- end sidebar / panel -->
+
+						<!-- header page
+						<div class="header-title">
+							<div class="container">we
+								<h3><img src="/images/weloop-pt.png" width="100" alt=""></h3>
+							</div>
+						</div>
+-->
+						<div class="row ">
+							<div class="col"></div>
+							<div class="header-title"><img class="align-items-center" src="weloop_app_V1/images/weloop-pt.png" width="180" alt="">
+							</div>
+							<div class="col"></div>
+						  </div>
+						<!-- end header page -->
+
+						<!-- separator
+						<div class="separator-small"></div>
+						 end separator -->
+
+
+						<!-- categories produtos-->
+						<div class="categories servicos">
+							<div class="block-title">
+								<h3>O que você procura?</h3>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-25">
+										<a href="/category-details/" data-transition="f7-dive">
+											<div class="content">
+											<img src="weloop_app_V1/images/venda.png" class="icon"></img>
+												<h6 class="second-title">Venda</h6>
+											</div>
+										</a>
+									</div>
+									<div class="col-25">
+										<a href="/category-details/" data-transition="f7-dive">
+											<div class="content">
+							<img src="weloop_app_V1/images/aluguel.png" class="icon"></img>
+												<h6 class="second-title">Aluguel</h6>
+											</div>
+										</a>
+									</div>
+									<div class="col-25">
+										<a href="/category-details/" data-transition="f7-dive">
+											<div class="content">
+											<img src="weloop_app_V1/images/troca.png" class="icon"></img>
+												<h6 class="second-title">Troca</h6>
+											</div>
+										</a>
+									</div>
+									<div class="col-25">
+										<a href="/category-details/" data-transition="f7-dive">
+											<div class="content">
+										<img src="weloop_app_V1/images/marcas.png" class="icon"></img>
+												<h6 class="second-title">Marcas</h6>
+											</div>
+										</a>
+									</div>
+
+								</div>
+								</div>
+								</div>
+<!-- categories serviços-->
+<div class="categories servicos">
+	<div class="block-title">
+		<h3>Contrate um serviço </h3>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-25">
+				<a href="/category-details/" data-transition="f7-dive">
+					<div class="content">
+						<img src="weloop_app_V1/images/reparo.png" class="icon"></img>
+						<h6 class="second-title reparo">Reparo</h6>
+					</div>
+				</a>
+			</div>
+			<div class="col-25">
+				<a href="/category-details/" data-transition="f7-dive">
+					<div class="content">
+						<img src="weloop_app_V1/images/lavanderia.png" class="icon"></img>
+						<h6 class="second-title lavanderia">Lavanderia</h6>
+					</div>
+				</a>
+			</div>
+			<div class="col-25">
+				<a href="/category-details/" data-transition="f7-dive">
+					<div class="content">
+						<img src="weloop_app_V1/images/upcycling.png" class="icon"></img>
+						<h6 class="second-title upcycling">Upcycling</h6>
+					</div>
+				</a>
+			</div>
+			<div class="col-25">
+				<a href="/category-details/" data-transition="f7-dive">
+					<div class="content">
+							<img src="weloop_app_V1/images/doacao.png" class="icon"></img>
+						<h6 class="second-title">doação</h6>
+					</div>
+				</a>
+			</div>
+
+		</div>
+		</div>
+		</div>
+		<!-- end categories -->
+
+
+<!-- separator -->
+<div class="separator-large"></div>
+<!-- end separator -->
+
+
+	<!--  banners  tipo rappi
+<div class="row">
+	<div class="col-100 medium-50 ">
+		<div class="card radius-default">
+			<div class="card-content ">
+
+				<div class="row no-gap ">
+					<div class="col-33 "><img class="radius-left-only" src="images/logo200x300.png" alt=""> </div>
+					<div class="col-66"><div class="card-content card-content-padding">
+						<p class="date">Posted on January 21, 2015</p>
+						<p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	 	 </div>
+	</div>
+
+	  <div class="col-100 medium-50">
+		<div class="card radius-default">
+			<div class="card-content ">
+
+				<div class="row no-gap ">
+					<div class="col-33 "><img class="radius-left-only" src="images/logo200x300.png" alt=""> </div>
+					<div class="col-66"><div class="card-content card-content-padding">
+						<h6 class="date">Posted on January 21, 2015</h6>
+						<p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	 	 </div>
+	 	 </div>
+</div>
+
+       <!--  end  banners  tipo rappi -->
+
+
+
+
+<!--   banners  parceiro -->
+	 <div class="row">
+		<div class="col-100 medium-50">
+			<div class="container">
+				<a class="link" href="formServico">
+					<div class="content-box banner-service">
+						<div class="content color-white content-left">
+							<h5 class="title-item color-white">Cadastre um serviço</h5>
+							<p class="text-small">Sabe costurar, fazer upcycling, passar
+								ou lavar como ninguém? </p>
+								<p class="text-small"> Ofereça estes e outros serviços e complemente sua renda.</p>
+						</div>
+						<div class="content content-right">
+							<div class="button button-icon-large">
+								<ion-icon name="arrow-forward-outline" role="img" class="md hydrated" aria-label="arrow forward outline"></ion-icon>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="col-100 medium-50">
+			<div class="container-brand">
+					<a href="/formMarca/">
+					<div class="content-box banner-brand">
+						<div class="content color-white content-left">
+							<h5 class="title-item color-white">Cadastre uma marca sustentável</h5>
+							<p class="text-small">Sua marca é sustentável e/ou circular?</p>
+								<p class="text-small">Cadastre-se aqui e conecte-se com a comunidade Weloop.</p>
+						</div>
+						<div class="content content-right">
+							<div class="button button-icon-large">
+								<ion-icon name="arrow-forward-outline" role="img" class="md hydrated" aria-label="arrow forward outline"></ion-icon>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	  </div>
+
+
+ <!-- end banners parceiro -->
+
+ <!--end banners -->
+
+  <!-- cards infos -->
+
+  <div class="container">
+	<div class="row ">
+		<div class="col-50 medium-25">
+			<div class="card card-item card-armario">
+				<h3>Meu Armário</h3>
+			  </div>
+		</div>
+		<div class="col-50 medium-25">
+			<div class="card card-item card-dicas">
+				<h3>Dicas Weloop</h3>
+			  </div>
+		</div>
+		<div class="col-50 medium-25">
+			<div class="card card-item card-blog">
+				<h3>Blog Weloop</h3>
+			  </div>
+		</div>
+		<div class="col-50 medium-25">
+			<div class="card card-item card-mais">
+				<h3>Em Breve!</h3>
+			  </div>
+		</div>
+
+	</div>
+
+	</div>
+
+
+   <!--end cards infos -->
+
+						<!-- latest ads -->
+						<div class="latest-ads">
+							<div class="block-title">
+								<h3>Últimos produtos <a href="/ads/" data-transition="f7-dive" class="right-link">Ver todos</a></h3>
+							</div>
+
+
+
+
+
+							<div class="container">
+								<div class="row ">
+									<div class="col-50 medium-25">
+										<div class="content-item radius-default bg-white">
+											<a href="/ads-details/">
+												<img class="full-width radius-default" src="weloop_app_V1/images/oz-seyrek-bLZQ46t06Vs-unsplash.jpg" alt="">
+												<div class="text-desc">
+													<p class="title-item">Moletom vintage</p>
+													<p class="price-item">R$ 80,00</p>
+													<p class="location-item"><ion-icon name="map-outline"></ion-icon>RIO DE JANEIRO, RJ</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-50 medium-25">
+										<div class="content-item radius-default bg-white">
+											<a href="/ads-details/">
+												<img class="full-width radius-default" src="weloop_app_V1//sorin-sirbu-_3iI0mADqho-unsplash.jpg" alt="">
+												<div class="text-desc">
+													<p class="title-item">Jaqueta jeans </p>
+													<p class="price-item">R$ 120,00/dia</p>
+													<p class="location-item"><ion-icon name="map-outline"></ion-icon>SÃO PAULO, SP</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-50 medium-25">
+										<div class="content-item radius-default bg-white">
+											<a href="/ads-details/">
+												<img class="full-width radius-default" src="weloop_app_V1/images/kate-skumen-PJRabkuH3_Q-unsplash.jpg" alt="">
+												<div class="text-desc">
+													<p class="title-item">Vestido plush</p>
+													<p class="price-item">R$ 80,00/dia</p>
+													<p class="location-item"><ion-icon name="map-outline"></ion-icon>SÃO PAULO, SP</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-50 medium-25">
+										<div class="content-item radius-default bg-white">
+											<a href="/ads-details/">
+												<img class="full-width radius-default" src="weloop_app_V1/images/ian-dooley-TT-ROxWj9nA-unsplash.jpg" alt="">
+												<div class="text-desc">
+													<p class="title-item">Cropped customizado</p>
+													<p class="price-item">R$ 25,00</p>
+													<p class="location-item"><ion-icon name="map-outline"></ion-icon>SÃO PAULO, SP</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- end latest ads -->
+
+
+
+						<!-- separator -->
+						<div class="separator-large"></div>
+						<!-- end separator -->
+
+
+						<!-- separator -->
+						<div class="separator-large"></div>
+						<!-- end separator -->
+
+
+						<!-- ===== END TAB HOME ===== -->
+					</div>
+
+					<div id="tab-favorite" class="tab tab-favorite">
+						<!-- ===== TAB FAVORITES ===== -->
+
+						<!-- navbar -->
+						<div class="navbar">
+							<div class="navbar-inner sliding">
+								<div class="left"></div>
+								<div class="title">Favorites</div>
+								<div class="right">
+									<a href="" class="link">
+										<ion-icon name="search-outline"></ion-icon>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end navbar -->
+
+						<!-- separator -->
+						<div class="separator-small"></div>
+						<!-- end separator -->
+
+						<div class="favorites">
+							<div class="container">
+								<div class="content-wrapper">
+									<a href="#">
+										<div class="favorite-symbol active-symbol"><ion-icon name="heart-outline"></ion-icon></div>
+									</a>
+									<div class="content-image">
+										<img class="radius-default" src="weloop_app_V1/images/cars5.jpg" alt="">
+									</div>
+									<div class="boxed">
+										<p class="title-item">Mobilus gray</p>
+										<p class="price-item">$8888</p>
+										<ul class="rating-item">
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-outline"></ion-icon></li>
+										</ul>
+										<p class="location-item"><ion-icon name="map-outline"></ion-icon>NEW YORK, US</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- separator -->
+						<div class="separator-medium"></div>
+						<!-- end separator -->
+
+						<div class="favorites">
+							<div class="container">
+								<div class="content-wrapper">
+									<a href="#">
+										<div class="favorite-symbol active-symbol"><ion-icon name="heart-outline"></ion-icon></div>
+									</a>
+									<div class="content-image">
+										<img class="radius-default" src="weloop_app_V1/images/cars1.jpg" alt="">
+									</div>
+									<div class="boxed">
+										<p class="title-item">Greeny-c2 1992</p>
+										<p class="price-item">$9142</p>
+										<ul class="rating-item">
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-outline"></ion-icon></li>
+										</ul>
+										<p class="location-item"><ion-icon name="map-outline"></ion-icon>NEW YORK, US</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- separator -->
+						<div class="separator-medium"></div>
+						<!-- end separator -->
+
+						<div class="favorites">
+							<div class="container">
+								<div class="content-wrapper">
+									<a href="#">
+										<div class="favorite-symbol active-symbol"><ion-icon name="heart-outline"></ion-icon></div>
+									</a>
+									<div class="content-image">
+										<img class="radius-default" src="weloop_app_V1/properties2.jpg" alt="">
+									</div>
+									<div class="boxed">
+										<p class="title-item">House 200 M2</p>
+										<p class="price-item">$9541</p>
+										<ul class="rating-item">
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-outline"></ion-icon></li>
+										</ul>
+										<p class="location-item"><ion-icon name="map-outline"></ion-icon>NEW YORK, US</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- separator -->
+						<div class="separator-medium"></div>
+						<!-- end separator -->
+
+						<div class="favorites">
+							<div class="container">
+								<div class="content-wrapper">
+									<a href="#">
+										<div class="favorite-symbol active-symbol"><ion-icon name="heart-outline"></ion-icon></div>
+									</a>
+									<div class="content-image">
+										<img class="radius-default" src="weloop_app_V1/images/cars8.jpg" alt="">
+									</div>
+									<div class="boxed">
+										<p class="title-item">redma c1 2019</p>
+										<p class="price-item">$7020</p>
+										<ul class="rating-item">
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-sharp"></ion-icon></li>
+											<li><ion-icon name="star-outline"></ion-icon></li>
+										</ul>
+										<p class="location-item"><ion-icon name="map-outline"></ion-icon>NEW YORK, US</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- separator -->
+						<div class="separator-large"></div>
+						<!-- end separator -->
+
+						<!-- ===== END TAB FAVORITES ===== -->
+					</div>
+
+					<div id="tab-add" class="tab tab-add">
+						<!-- ===== TAB ADD ADS ===== -->
+
+						<div class="choose-categories">
+							<div class="block-title">
+								<h3>O que você gostaria?</h3>
+							</div>
+							<div class="container">
+								<a href="/add-ads-product-details/" data-transition="f7-dive">
+									<div class="category-list">
+										<div class="category-icon">
+											<ion-icon name="car-sport-outline" class="color-blue"></ion-icon>
+										</div>
+										<div class="category-list-label">
+											<div class="category-list-title">
+												<h5>Vender</h5>
+											</div>
+											<div class="category-list-after">
+												<ion-icon name="chevron-forward-outline"></ion-icon>
+											</div>
+										</div>
+									</div>
+								</a>
+
+								<!-- separator -->
+								<div class="separator-medium"></div>
+								<!-- end separator -->
+
+								<a href="/add-ads-product-details/" data-transition="f7-dive">
+									<div class="category-list">
+										<div class="category-icon">
+											<img class="" src="weloop_app_V1/images/aluguel.png" alt="">
+										</div>
+										<div class="category-list-label">
+											<div class="category-list-title">
+												<h5>Alugar</h5>
+											</div>
+											<div class="category-list-after">
+												<img class="" src="weloop_app_V1/images/aluguel.png" alt="">
+											</div>
+										</div>
+									</div>
+								</a>
+
+								<!-- separator -->
+								<div class="separator-medium"></div>
+								<!-- end separator -->
+
+								<a href="/add-ads-product-details/" data-transition="f7-dive">
+									<div class="category-list">
+										<div class="category-icon">
+											<ion-icon name="home-outline" class="color-orange"></ion-icon>
+										</div>
+										<div class="category-list-label">
+											<div class="category-list-title">
+												<h5>Trocar</h5>
+											</div>
+											<div class="category-list-after">
+												<ion-icon name="chevron-forward-outline"></ion-icon>
+											</div>
+										</div>
+									</div>
+								</a>
+
+								<!-- separator -->
+								<div class="separator-medium"></div>
+								<!-- end separator -->
+
+
+							</div>
+						</div>
+
+						<!-- separator -->
+						<div class="separator-large"></div>
+						<!-- end separator -->
+
+						<!-- ===== END TAB ADD ADS ===== -->
+					</div>
+
+					<div id="tab-search" class="tab tab-search">
+						<!-- ===== TAB SEARCH ===== -->
+
+						<!-- navbar -->
+						<div class="navbar">
+							<div class="navbar-inner sliding">
+								<div class="left"></div>
+								<div class="title">Search</div>
+								<div class="right"></div>
+								<div class="subnavbar">
+									<form class="searchbar searchbar-init" data-search-container=".search-list" data-search-in=".item-title">
+										<div class="searchbar-inner">
+											<div class="searchbar-input-wrap">
+												<input type="search" placeholder="Find Laptop, Handphone, and other">
+												<i class="searchbar-icon"></i>
+												<span class="input-clear-button"></span>
+											</div>
+											<span class="searchbar-disable-button">Cancelar</span>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- end navbar -->
+
+						<!-- separator -->
+						<div class="separator-large separator-top-large"></div>
+						<!-- end separator -->
+
+						<div class="search-action">
+							<div class="container">
+								<div class="row">
+									<div class="col-50">
+										<a class="sheet-open" href="#" data-sheet=".my-sheet-swipe-to-close">
+											<div class="content">
+												<ion-icon name="funnel-outline"></ion-icon><span>Ordenar</span>
+											</div>
+										</a>
+									</div>
+									<div class="col-50">
+										<a href="#" class="panel-open" data-panel=".sidebar-right">
+											<div class="content">
+												<ion-icon name="filter-outline"></ion-icon><span>Filtrar</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- sheet modal for Ordenar por -->
+						<div class="sheet-modal my-sheet-swipe-to-close">
+							<div class="sheet-modal-inner">
+								<div class="block-title">
+									<h3>Ordenar por: <a href="" class="right-link sheet-close"><ion-icon name="close-circle-outline"></ion-icon></a></h3>
+								</div>
+								<div class="list">
+									<ul>
+										<li>
+											<a href="" class="item-link item-content">
+												<div class="item-media">
+													<ion-icon name="shield-checkmark-outline"></ion-icon>
+												</div>
+												<div class="item-inner">
+													<div class="item-title">Relevância</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="" class="item-link item-content">
+												<div class="item-media">
+													<ion-icon name="calendar-outline"></ion-icon>
+												</div>
+												<div class="item-inner">
+													<div class="item-title">Data</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="" class="item-link item-content">
+												<div class="item-media">
+													<ion-icon name="arrow-up-outline"></ion-icon>
+												</div>
+												<div class="item-inner">
+													<div class="item-title">Menor preço</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="" class="item-link item-content">
+												<div class="item-media">
+													<ion-icon name="arrow-down-outline"></ion-icon>
+												</div>
+												<div class="item-inner">
+													<div class="item-title">Maior preço</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- end sheet modal for Ordenar por -->
+
+						<!-- sidebar / panel for filter -->
+						<div class="panel-backdrop"></div>
+						<div class="panel panel-right sidebar-right panel-cover panel-init">
+							<div class="block-title title-small">
+								<h3>Ordenar por</h3>
+							</div>
+							<form class="list">
+								<ul>
+									<li class="item-content item-input">
+										<div class="item-inner">
+											<div class="item-input-wrap input-dropdown-wrap">
+												<select>
+													<option value="Relevance">Relevância</option>
+													<option value="Date">Data</option>
+													<option value="Price">Menor preço</option>
+													<option value="Price">Maior preço</option>
+												</select>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</form>
+
+							<div class="block-title title-small">
+								<h3>Avaliações</h3>
+							</div>
+							<div class="rating-filter">
+								<div class="container">
+									<ul>
+										<li class="rating-active"><a href=""><ion-icon name="star-sharp"></ion-icon>5</a></li>
+										<li><a href=""><ion-icon name="star-sharp"></ion-icon>4</a></li>
+										<li><a href=""><ion-icon name="star-sharp"></ion-icon>3</a></li>
+										<li><a href=""><ion-icon name="star-sharp"></ion-icon>2</a></li>
+										<li><a href=""><ion-icon name="star-sharp"></ion-icon>1</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="block-title title-small">
+								<h3>Localização</h3>
+							</div>
+							<form class="list">
+								<ul>
+									<li class="item-content item-input">
+										<div class="item-inner">
+											<div class="item-input-wrap">
+												<input type="text" placeholder="Localização atual">
+												<span class="input-clear-button"></span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</form>
+
+							<div class="block-title title-small">
+								<h3>Preço</h3>
+							</div>
+							<div class="container">
+								<form class="list">
+									<ul>
+										<li>
+											<div class="row">
+												<div class="col-50">
+													<div class="item-content item-input">
+														<div class="item-inner">
+															<div class="item-input-wrap">
+																<input type="text" placeholder="Mínimo">
+																<span class="input-clear-button"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-50">
+													<div class="item-content item-input">
+														<div class="item-inner">
+															<div class="item-input-wrap">
+																<input type="text" placeholder="Máximo">
+																<span class="input-clear-button"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</form>
+							</div>
+
+							<!-- separator -->
+							<div class="separator-large"></div>
+							<!-- end separator -->
+
+							<div class="fitler-execution">
+								<div class="container">
+									<button class="button secondary-button panel-close">Cancelar</button>
+									<!-- separator -->
+									<div class="separator-medium"></div>
+									<!-- end separator -->
+									<button class="button">Aplicar Filtros</button>
+								</div>
+							</div>
+
+							<!-- separator -->
+							<div class="separator-large"></div>
+							<!-- end separator -->
+
+						</div>
+						<!-- end sidebar / panel for filter -->
+
+						<div class="searchbar-backdrop"></div>
+						<div class="searchbar-found">
+							<div class="search-by-category">
+								<div class="block-title">
+									<h3 class="title-extra-small">Por Categorias <a href="#" class="right-link">Ver todas</a></h3>
+								</div>
+								<div class="list">
+									<ul>
+										<li>
+											<a href="" class="item-link item-content">
+												<div class="item-media">
+													<ion-icon name="car-sport-outline" class="color-blue"></ion-icon>
+												</div>
+												<div class="item-inner">
+													<div class="item-title">Comprar</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="" class="item-link item-content">
+												<div class="item-media">
+													<ion-icon name="bicycle-outline" class="color-purple"></ion-icon>
+												</div>
+												<div class="item-inner">
+													<div class="item-title">Alugar</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="" class="item-link item-content">
+												<div class="item-media">
+													<ion-icon name="home-outline" class="color-orange"></ion-icon>
+												</div>
+												<div class="item-inner">
+													<div class="item-title">Trocar</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- separator -->
+						<div class="separator-large"></div>
+						<!-- end separator -->
+
+						<!-- ===== END TAB SEARCH ===== -->
+					</div>
+
+					<div id="tab-profile" class="tab tab-profile">
+
+						<!-- separator -->
+						<div class="separator-extra-large"></div>
+						<!-- end separator -->
+
+						<!-- ===== TAB PROFILE ===== -->
+						<div class="container">
+							<div class="header-profile">
+								<img src="weloop_app_V1/images/avatar6.jpg" alt="">
+								<div class="title-name">
+									<h4 class="">Eiga Galantini</h4>
+									<p class="text-small">Membro desde 2020</p>
+								</div>
+
+								<!-- separator -->
+								<div class="separator-medium"></div>
+								<!-- end separator -->
+
+								<div class="profile-statistic">
+									<div class="row">
+										<div class="col-33">
+											<div class="content">
+												<h4>15</h4>
+												<span>Produtos</span>
+											</div>
+										</div>
+										<div class="col-33">
+											<span class="line-divider"></span>
+										</div>
+										<div class="col-33">
+											<div class="content">
+												<h4>80</h4>
+												<span>Seguidores</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- separator -->
+								<div class="separator-medium"></div>
+								<!-- end separator -->
+
+								<div class="contact-button">
+									<button class="button">Entrar em contato</button>
+								</div>
+
+								<!-- separator -->
+								<div class="separator-medium"></div>
+								<!-- end separator -->
+
+								<div class="profile-media">
+									<ul>
+										<li><a href="#" class="bg-gray"><ion-icon name="person-add-outline"></ion-icon></a></li>
+										<li><a href="#" class="bg-red"><ion-icon name="mail-outline"></ion-icon></a></li>
+										<li><a href="#" class="bg-blue"><ion-icon name="chatbox-outline"></ion-icon></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="list">
+							<ul>
+								<li>
+									<a href="/my-ads/" data-transition="f7-dive" class="item-link item-content">
+										<div class="item-media">
+											<ion-icon name="duplicate-outline" class="color-blue"></ion-icon>
+										</div>
+										<div class="item-inner">
+											<div class="item-title">Meus produtos</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="/settings/" data-transition="f7-dive" class="item-link item-content">
+										<div class="item-media">
+											<ion-icon name="settings-outline" class="color-green"></ion-icon>
+										</div>
+										<div class="item-inner">
+											<div class="item-title">Configurações</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="item-link item-content">
+										<div class="item-media">
+											<ion-icon name="log-out-outline" class="color-red"></ion-icon>
+										</div>
+										<div class="item-inner">
+											<div class="item-title">Sair</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- ===== END TAB PROFILE ===== -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- script -->
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<script src="js/routes.js"></script>
+	<script src="js/app.js"></script>
+	<!-- end script -->
+
+</body>
+</html>
